@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: "Assets/Samples/\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3\u306E\u8CFC\u8AAD/\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3\u306E\u8CFC\u8AAD.unity"
     guid: f2d7afcc70b095642808924d5980e65a
   - enabled: 1
-    path: Assets/MyUtils/Startup/Startup.unity
+    path: Packages/com.takahashi.myutils/Runtime/Startup/Startup.unity
     guid: 1612e77b1a8160c4e81f0d65c7b4b3d8
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: de728af38da6e784a88849ed095b9b53, type: 3}

@@ -1,9 +1,8 @@
-using MyUtils;
 using MyUtils.FeatureContainer;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Lobby
+namespace Samples.画面分割_Lobby_
 {
     /// <summary>
     /// プレイヤーの開始位置を設定するクラス

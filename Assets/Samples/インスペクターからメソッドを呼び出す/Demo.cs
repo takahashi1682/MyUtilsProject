@@ -8,6 +8,7 @@ namespace Samples.インスペクターからメソッドを呼び出す
     public class Demo : MonoBehaviour, IFeature
     {
         [SerializeField] private UnitData _testData;
+        [SerializeField] private UnitData _testData2;
         [SerializeField] private TMPro.TextMeshProUGUI _name;
         [SerializeField] private TMPro.TextMeshProUGUI _level;
         [SerializeField] private TMPro.TextMeshProUGUI _attack;
@@ -34,8 +35,11 @@ namespace Samples.インスペクターからメソッドを呼び出す
         /// </summary>
         [InspectorButton]
         public void ShowData() => ShowData(_testData);
-     
+
+        /// <summary>
+        /// 表示テスト用2
+        /// </summary>
         [InspectorButton]
-        public void ShowData2() => ShowData(_testData);
+        public void ShowData2() => ShowData(_testData2);
     }
 }

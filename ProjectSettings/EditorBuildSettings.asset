@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: "Assets/Projects/Samples/\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3\u306E\u8CFC\u8AAD/\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3\u306E\u8CFC\u8AAD.unity"
+    path: "Assets/Projects/Samples/05_Animator\u306E\u8CFC\u8AAD/Animator\u306E\u8CFC\u8AAD.unity"
     guid: f2d7afcc70b095642808924d5980e65a
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 4730e9b3974bbf64d8a2ba08543994af, type: 2}

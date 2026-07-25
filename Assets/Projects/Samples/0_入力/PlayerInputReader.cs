@@ -2,7 +2,7 @@ using R3;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Samples
+namespace Projects._0_入力
 {
     /// <summary>
     ///  Input System の入力を受け取る ScriptableObject

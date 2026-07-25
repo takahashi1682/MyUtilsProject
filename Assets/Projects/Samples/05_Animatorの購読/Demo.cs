@@ -1,8 +1,8 @@
 using MyUtils.AnimatorUtils;
-using UnityEngine;
 using R3;
+using UnityEngine;
 
-namespace Samples.アニメーションの購読
+namespace Projects._05_Animatorの購読
 {
     public enum EAnimatorLayer
     {
@@ -10,7 +10,7 @@ namespace Samples.アニメーションの購読
         UpperBody = 1,
     }
 
-    public class AnimatorStateObserverDemo : MonoBehaviour
+    public class Demo : MonoBehaviour
     {
         public AnimatorStateObserver StateObserver;
         [SerializeField] private TMPro.TextMeshProUGUI _text;
@@ -38,14 +38,23 @@ namespace Samples.アニメーションの購読
                 .Subscribe(_ => UpdateUI($"{RightRotStateName} Exited"))
                 .AddTo(this);
 
-            // 左回転の監視（UpperBody 指定版）
-            StateObserver.OnEnterState(LeftRotStateName, (int)EAnimatorLayer.UpperBody)
-                .Subscribe(info => UpdateUI($"{LeftRotStateName} Entered, Speed:{info.StateInfo.speed}"))
+            // 左回転の監視（レイヤー指定なし版）
+            StateObserver.OnEnterState(LeftRotStateName)
+                .Subscribe(_ => UpdateUI($"{LeftRotStateName} Entered"))
                 .AddTo(this);
 
-            StateObserver.OnExitState(LeftRotStateName, (int)EAnimatorLayer.UpperBody)
-                .Subscribe(info => UpdateUI($"{LeftRotStateName} Exited, Speed:{info.StateInfo.speed}"))
+            StateObserver.OnExitState(LeftRotStateName)
+                .Subscribe(_ => UpdateUI($"{LeftRotStateName} Exited"))
                 .AddTo(this);
+            
+            // 左回転の監視（UpperBody 指定版）
+            // StateObserver.OnEnterState(LeftRotStateName, (int)EAnimatorLayer.UpperBody)
+            //     .Subscribe(info => UpdateUI($"{LeftRotStateName} Entered, Speed:{info.StateInfo.speed}"))
+            //     .AddTo(this);
+            //
+            // StateObserver.OnExitState(LeftRotStateName, (int)EAnimatorLayer.UpperBody)
+            //     .Subscribe(info => UpdateUI($"{LeftRotStateName} Exited, Speed:{info.StateInfo.speed}"))
+            //     .AddTo(this);
         }
 
         private void UpdateUI(string message)

@@ -772,7 +772,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::Scenes._3D\u3067\u30AB\u30FC\u30BD\u30EB\u306E\u65B9\u5411\u3092\u5411\u304F.MouseToWorldRaycaster"
   Target: {fileID: 1054639445}
-  _input: {fileID: 11400000, guid: 485c981c25604524fb7646e9a6af2ed5, type: 2}
   _maxDistance: 100
   _layerMask:
     serializedVersion: 2
@@ -807,7 +806,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1384901266}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e69d82582bf48848a2272dbdef1dc8f, type: 3}
   m_Name: 
@@ -844,7 +843,7 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1931842351}
   m_Enabled: 1
-  serializedVersion: 12
+  serializedVersion: 13
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
@@ -896,7 +895,7 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ForceVisible: 0
-  m_ShadowRadius: 0
+  m_ShapeRadius: 0
   m_ShadowAngle: 0
   m_LightUnit: 1
   m_LuxAtDistance: 1

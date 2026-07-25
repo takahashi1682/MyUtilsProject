@@ -456,192 +456,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 172039397}
   m_CullTransparentMesh: 1
---- !u!1 &501537485
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 501537489}
-  - component: {fileID: 501537490}
-  - component: {fileID: 501537493}
-  - component: {fileID: 501537492}
-  - component: {fileID: 501537491}
-  m_Layer: 0
-  m_Name: BGMPlayerTest
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &501537489
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 501537485}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &501537490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 501537485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c29f0d551d2ab6944b2b165015920450, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MyUtils.AudioManager.Player.IntroBGMPlayer
-  IsPlayOnAwake: 1
-  IsPlayOnEnable: 0
-  IsStopOnDestroy: 1
-  IntroSetting:
-    Clip: {fileID: 8300000, guid: f5c7f1b198a1982429cd818db2551eb6, type: 3}
-    Mute: 0
-    BypassEffects: 0
-    BypassListenerEffects: 0
-    BypassReverbZones: 0
-    IsLoop: 0
-    Priority: 128
-    Volume: 1
-    Pitch: 1
-    PanStereo: 0
-    SpatialBlendType: 0
-    ReverbZoneMix: 1
-    DopplerLevel: 1
-    Spread: 0
-    RolloffMode: 0
-    MinDistance: 1
-    MaxDistance: 50
-  LoopSetting:
-    Clip: {fileID: 8300000, guid: e820b64deb0c06343bba146cf1eebf41, type: 3}
-    Mute: 0
-    BypassEffects: 0
-    BypassListenerEffects: 0
-    BypassReverbZones: 0
-    IsLoop: 1
-    Priority: 128
-    Volume: 1
-    Pitch: 1
-    PanStereo: 0
-    SpatialBlendType: 0
-    ReverbZoneMix: 1
-    DopplerLevel: 1
-    Spread: 0
-    RolloffMode: 0
-    MinDistance: 1
-    MaxDistance: 50
-  PlayOffset: 0.1
---- !u!114 &501537491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 501537485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1608bb050108e84692505fc2a7d9990, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MyUtils.AudioManager.Player.VoicePlayer
-  IsPlayOnAwake: 1
-  IsPlayOnEnable: 0
-  IsStopOnDestroy: 1
-  Setting:
-    Clip: {fileID: 8300000, guid: 1e6a7ead982f178468f53e094db1a7d5, type: 3}
-    Mute: 0
-    BypassEffects: 0
-    BypassListenerEffects: 0
-    BypassReverbZones: 0
-    IsLoop: 0
-    Priority: 128
-    Volume: 1
-    Pitch: 1
-    PanStereo: 0
-    SpatialBlendType: 0
-    ReverbZoneMix: 1
-    DopplerLevel: 1
-    Spread: 0
-    RolloffMode: 0
-    MinDistance: 1
-    MaxDistance: 50
---- !u!114 &501537492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 501537485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2669c9ba149f28438cd015151752e8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MyUtils.AudioManager.Player.SEPlayer
-  IsPlayOnAwake: 1
-  IsPlayOnEnable: 0
-  IsStopOnDestroy: 1
-  Setting:
-    Clip: {fileID: 8300000, guid: 1e6a7ead982f178468f53e094db1a7d5, type: 3}
-    Mute: 0
-    BypassEffects: 0
-    BypassListenerEffects: 0
-    BypassReverbZones: 0
-    IsLoop: 0
-    Priority: 128
-    Volume: 1
-    Pitch: 1
-    PanStereo: 0
-    SpatialBlendType: 0
-    ReverbZoneMix: 1
-    DopplerLevel: 1
-    Spread: 0
-    RolloffMode: 0
-    MinDistance: 1
-    MaxDistance: 50
---- !u!114 &501537493
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 501537485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c202ab4e7424912a12d72e15b585332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MyUtils.AudioManager.Player.BGMPlayer
-  IsPlayOnAwake: 1
-  IsPlayOnEnable: 0
-  IsStopOnDestroy: 1
-  Setting:
-    Clip: {fileID: 8300000, guid: e820b64deb0c06343bba146cf1eebf41, type: 3}
-    Mute: 0
-    BypassEffects: 0
-    BypassListenerEffects: 0
-    BypassReverbZones: 0
-    IsLoop: 1
-    Priority: 128
-    Volume: 1
-    Pitch: 1
-    PanStereo: 0
-    SpatialBlendType: 0
-    ReverbZoneMix: 1
-    DopplerLevel: 1
-    Spread: 0
-    RolloffMode: 0
-    MinDistance: 1
-    MaxDistance: 50
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1388,6 +1202,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -1737,7 +1552,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MyUtils.PopupWindow.PopupPanel
   _panel: {fileID: 1053188110}
   _messageText: {fileID: 1142206387}
-  _positiveButton: {fileID: 1076950327}
+  _buttons:
+  - {fileID: 1076950327}
+  - {fileID: 1194941362}
   _negativeButton: {fileID: 1194941362}
 --- !u!1 &1676612304
 GameObject:
@@ -1961,4 +1778,3 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 1104143162}
   - {fileID: 1035694851}
-  - {fileID: 501537489}

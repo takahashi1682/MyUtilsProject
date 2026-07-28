@@ -5,18 +5,18 @@ using UnityEngine;
 
 namespace Projects._61_リスト
 {
-    public class DemoList : AbstractList<DemoData>
+    public class DemoList : AbstractList<DemoListItem, DemoData>
     {
         public List<DemoData> ListData;
 
         private void Start()
         {
-            CreateListItems(ListData);
+            RefreshList(ListData);
         }
 
-        protected override void OnClickItem(DemoData data)
+        protected override void OnItemClicked(DemoListItem item)
         {
-            Debug.Log($"Clicked on item: {data.Name}, Age: {data.Age}");
+            Debug.Log($"Clicked Item: {item.Index}, Name: {item.Data.Name}, Age: {item.Data.Age}");
         }
     }
 }

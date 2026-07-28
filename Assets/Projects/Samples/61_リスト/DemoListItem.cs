@@ -6,13 +6,15 @@ namespace Projects._61_リスト
 {
     public class DemoListItem : AbstractListItem<DemoData>
     {
-        [SerializeField] private TMPro.TMP_Text _name;
-        [SerializeField] private TMPro.TMP_Text _age;
+        [SerializeField] private TMPro.TMP_Text _indexText;
+        [SerializeField] private TMPro.TMP_Text _nameText;
+        [SerializeField] private TMPro.TMP_Text _ageText;
 
-        public override void Initialize(DemoData data)
+        protected override void Bind(int index, DemoData data)
         {
-            _name.text = data.Name;
-            _age.text = data.Age.ToString();
+            _indexText.text = index.ToString();
+            _nameText.text = data.Name;
+            _ageText.text = data.Age.ToString();
         }
     }
 }

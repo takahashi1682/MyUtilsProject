@@ -58,7 +58,8 @@
       "scopes": [
         "com.cysharp",
         "org.nuget",
-        "jp.hadashikick.vcontainer"
+        "jp.hadashikick.vcontainer",
+        "net.tnrd.serializableinterface"
       ]
     }
   ]

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6100825394391632202}
   - component: {fileID: 5766359088720491689}
+  - component: {fileID: -7170928665162347054}
   m_Layer: 0
   m_Name: RootLifetimeScope
   m_TagString: Untagged
@@ -49,6 +50,30 @@ MonoBehaviour:
     TypeName: 
   autoRun: 1
   autoInjectGameObjects: []
+  _demoDataStore: {fileID: -7170928665162347054}
+--- !u!114 &-7170928665162347054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226274624910234703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f4b5fd25cfe70347aa3ba54c2dc07fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: "Assembly-CSharp::Projects._03_\u30C7\u30FC\u30BF\u4FDD\u5B58.DemoSaveDataStore"
+  <Default>k__BackingField: {fileID: 11400000, guid: 99329b9012a22224f904170693db77df, type: 2}
+  <Override>k__BackingField: {fileID: 0}
+  <Current>k__BackingField:
+    value:
+      PlayerName: 
+      Score: 0
+  LoadOnAwake: 1
+  AutoSaveOnChange: 0
+  ShowDebugInfo: 1
+  _isEncrypt: 1
+  _aesKey: e5Cp29Pda8n5Qv13
 --- !u!1001 &3262995518806580952
 PrefabInstance:
   m_ObjectHideFlags: 0

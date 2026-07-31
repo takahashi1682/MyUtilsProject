@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using MyUtils;
-using Projects._1_アイテムデータ;
+using Projects._02_アイテムデータ;
 using UnityEngine;
 
 namespace Projects._61_リスト

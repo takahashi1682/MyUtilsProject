@@ -2,7 +2,7 @@ using MyUtils.Countdown;
 using R3;
 using UnityEngine;
 
-namespace Projects._09_カウントダウン
+namespace Projects._41_カウントダウン
 {
     /// <summary>
     /// Countdown系（BasicTimer / StartTimer / GameTimer）のデモ用スクリプト

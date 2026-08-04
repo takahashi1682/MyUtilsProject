@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Projects._15_レイキャスト検知
+namespace Projects._11_レイキャスト検知
 {
     /// <summary>
     /// RayCastDetection系（GroundDetection2D / WallDetection2D / HoleDetection2D）のデモ用スクリプト

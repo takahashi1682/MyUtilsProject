@@ -1,11 +1,10 @@
 using System;
-using MyUtils;
 using MyUtils.HTTPUtils;
 using MyUtils.JsonUtils;
 using TMPro;
 using UnityEngine;
 
-namespace Projects._18_HTTP暗号化
+namespace Projects._52_HTTP暗号化
 {
     [Serializable]
     public class PlayerSaveData

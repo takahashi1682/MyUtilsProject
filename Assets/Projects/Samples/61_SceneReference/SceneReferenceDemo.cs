@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Projects._21_SceneReference
+namespace Projects._61_SceneReference
 {
     /// <summary>
     /// MyUtils.SceneReference.SceneReference のデモ用スクリプト。

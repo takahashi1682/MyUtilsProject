@@ -2,7 +2,7 @@ using MyUtils.AudioManager.Core;
 using MyUtils.AudioManager.Manager;
 using UnityEngine;
 
-namespace Projects._12_オーディオ
+namespace Projects._43_オーディオ
 {
     /// <summary>
     /// AudioManager系（BGMManager / SEManager / VoiceManager）のデモ用スクリプト

@@ -2,7 +2,7 @@ using MyUtils.Gauge;
 using MyUtils.Parameter.Basic;
 using UnityEngine;
 
-namespace Projects._13_ゲージ
+namespace Projects._20_ゲージ
 {
     /// <summary>
     /// Gauge系（MemoryGauge / FillSegmentGauge）のデモ用スクリプト

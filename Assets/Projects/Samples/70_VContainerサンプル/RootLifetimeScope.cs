@@ -1,9 +1,9 @@
-using Projects._03_データ保存;
+using Projects._51_データ保存;
 using UnityEngine;
 using VContainer;
 using VContainer.Unity;
 
-namespace Projects._10_VContainerサンプル
+namespace Projects._70_VContainerサンプル
 {
     public class RootLifetimeScope : LifetimeScope
     {

@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using MyUtils.AbstractList;
-using Projects._02_アイテムデータ;
+using Projects._50_アイテムデータ;
 using UnityEngine;
 
-namespace Projects._61_リスト
+namespace Projects._26_リスト
 {
     public class DemoList : AbstractList<DemoListItem, DemoData>
     {

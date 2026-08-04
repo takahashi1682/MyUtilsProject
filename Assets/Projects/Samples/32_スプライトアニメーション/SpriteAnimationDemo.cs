@@ -2,7 +2,7 @@ using MyUtils.SpriteAnimation;
 using TMPro;
 using UnityEngine;
 
-namespace Projects._16_スプライトアニメーション
+namespace Projects._32_スプライトアニメーション
 {
     /// <summary>
     /// SpriteAnimation（SpriteRenderer向け）とImageAnimation（UI Image向け）のデモ用スクリプト。

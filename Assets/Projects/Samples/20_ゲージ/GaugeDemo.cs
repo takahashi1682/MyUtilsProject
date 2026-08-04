@@ -1,4 +1,4 @@
-using MyUtils;
+using MyUtils.Gauge;
 using MyUtils.Parameter.Basic;
 using UnityEngine;
 

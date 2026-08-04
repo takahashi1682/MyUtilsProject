@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
-using MyUtils;
+using MyUtils.Misc;
 using TMPro;
 using UnityEngine;
 

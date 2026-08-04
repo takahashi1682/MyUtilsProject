@@ -250,7 +250,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 075fd57ace1d4184d851f55a9cec5be3, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: MyUtils.Runtime::MyUtils.CameraUtils.FPSCamera
+  m_EditorClassIdentifier: MyUtils.Runtime::MyUtils.FPSController.BasicFPSCamera
   LookActionReference: {fileID: -6271646137096324699, guid: de728af38da6e784a88849ed095b9b53, type: 3}
   TargetHorizontal: {fileID: 512536772}
   TargetVertical: {fileID: 518749410}
@@ -407,7 +407,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1853b50f35c9284baf3f174848e323f, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: MyUtils.Runtime::MyUtils.BasicMove
+  m_EditorClassIdentifier: MyUtils.Runtime::MyUtils.FPSController.BasicMove
   MoveActionReference: {fileID: 8025759625323095858, guid: de728af38da6e784a88849ed095b9b53, type: 3}
   Target: {fileID: 512536772}
   Enabled: 1
@@ -922,7 +922,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "MyUtils.CameraUtils.FPSCameraとMyUtils.BasicMoveを使った一人称視点カメラ・移動のデモです。WASDで移動、マウスで視点操作。"
+  m_text: "MyUtils.FPSController.BasicFPSCameraとMyUtils.FPSController.BasicMoveを使った一人称視点カメラ・移動のデモです。WASDで移動、マウスで視点操作。"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

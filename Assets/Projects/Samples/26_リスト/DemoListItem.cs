@@ -1,4 +1,4 @@
-using MyUtils;
+using MyUtils.AbstractList;
 using Projects._02_アイテムデータ;
 using UnityEngine;
 

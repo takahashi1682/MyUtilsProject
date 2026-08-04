@@ -1,0 +1,9 @@
+key,name,lines
+string,string,string
+greeting,ねこ,こんにちは！これは TalkUtils の会話システムのサンプルです。
+greeting,ねこ,TalkManager がセリフの進行を管理し\nLineViewer が画面に表示しています。
+greeting,ねこ,クリックすると次のセリフに進めます。
+dialogue,ねこ,今日はいい天気だね。
+dialogue,いぬ,そうだね！散歩日和だ。
+dialogue,ねこ,CSVからセリフを読み込んでいるから\n内容を増やすのも簡単だよ。
+dialogue,いぬ,会話が終わるとウィンドウも自動で閉じるんだ。

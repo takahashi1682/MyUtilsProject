@@ -1,23 +1,11 @@
-using MyUtils;
 using R3;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 namespace Projects._01_入力
 {
-    /// <summary>
-    ///  Input System の入力を受け取る ScriptableObject
-    ///  ScriptableObjectなので、一度ロードされるとアプリ終了まで存在し続けます
-    /// </summary>
-    [CreateAssetMenu(fileName = "InputReader", menuName = "MyUtilsProject/Input Reader")]
-    public class PlayerInputReader : AbstractInputReader
+    public class PlayerInputReader : MonoBehaviour, InputSystem_Actions.IPlayerActions
     {
-        [Header("Input Actions")]
-        [SerializeField] private InputActionReference _moveAction;
-        [SerializeField] private InputActionReference _lookAction;
-        [SerializeField] private InputActionReference _fireAction;
-        [SerializeField] private InputActionReference _mousePositionAction;
-
         [Header("Reactive Properties")]
         [SerializeField] private SerializableReactiveProperty<Vector2> _move = new();
         public ReadOnlyReactiveProperty<Vector2> Move => _move;
@@ -31,24 +19,25 @@ namespace Projects._01_入力
         [SerializeField] private SerializableReactiveProperty<Vector2> _mousePosition = new();
         public ReadOnlyReactiveProperty<Vector2> MousePosition => _mousePosition;
 
-        protected override void OnEnable()
-        {
-            base.OnEnable();
+        private InputSystem_Actions _actions;
+        public InputSystem_Actions.PlayerActions Player { get; private set; }
 
-            RegisterVector2Action(_moveAction, _move);
-            RegisterVector2Action(_lookAction, _look);
-            RegisterVector2Action(_mousePositionAction, _mousePosition);
-            RegisterButtonAction(_fireAction, _fire);
+        private void Awake()
+        {
+            _actions = new InputSystem_Actions();
+            Player = _actions.Player;
+            Player.AddCallbacks(this);
         }
 
-        protected override void OnDisable()
-        {
-            UnregisterVector2Action(_moveAction, _move);
-            UnregisterVector2Action(_lookAction, _look);
-            UnregisterVector2Action(_mousePositionAction, _mousePosition);
-            UnregisterButtonAction(_fireAction, _fire);
+        private void OnEnable() => Player.Enable();
+        private void OnDisable() => Player.Disable();
+        private void OnDestroy() => Player.Disable();
 
-            base.OnDisable();
-        }
+        public void OnMove(InputAction.CallbackContext context) => _move.Value = context.ReadValue<Vector2>();
+        public void OnLook(InputAction.CallbackContext context) => _look.Value = context.ReadValue<Vector2>();
+        public void OnFire(InputAction.CallbackContext context) => _fire.Value = context.ReadValueAsButton();
+
+        public void OnMousePosition(InputAction.CallbackContext context)
+            => _mousePosition.Value = context.ReadValue<Vector2>();
     }
 }

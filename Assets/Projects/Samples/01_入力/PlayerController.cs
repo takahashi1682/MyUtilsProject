@@ -11,7 +11,7 @@ namespace Projects._01_入力
         {
             _inputReader.Fire
                 .Where(x => x) // ボタンが押されたときだけ実行
-                .Subscribe(value =>
+                .Subscribe(_ =>
                 {
                     Debug.Log("Fire!");
                 }).AddTo(this);

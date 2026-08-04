@@ -9,8 +9,26 @@ EditorBuildSettings:
     path: "Assets/Projects/Samples/01_\u5165\u529B/\u5165\u529B.unity"
     guid: f7a4039c7aec6aa4c83332d4ba974102
   - enabled: 1
-    path: "Assets/Projects/Samples/100_FPS\u30B2\u30FC\u30E0/FPS\u30B2\u30FC\u30E0.unity"
+    path: "Assets/Projects/Samples/12_FPS\u30B2\u30FC\u30E0/FPS\u30B2\u30FC\u30E0.unity"
     guid: f29aa9ad1ffca78479caa7fed949266c
+  - enabled: 1
+    path: "Assets/Projects/Samples/60_\u30B7\u30FC\u30F3\u9077\u79FB/\u30B7\u30FC\u30F3\u9077\u79FB_A.unity"
+    guid: 65a7c6a4a37a4f9d8a3b48a60201e5a4
+  - enabled: 1
+    path: "Assets/Projects/Samples/60_\u30B7\u30FC\u30F3\u9077\u79FB/\u30B7\u30FC\u30F3\u9077\u79FB_B.unity"
+    guid: fe2fd1200e4e4ea09c60475fbd878d59
+  - enabled: 1
+    path: Assets/Projects/Samples/Loading.unity
+    guid: e747c7fcc47ec8d4c8e41ad6598f922c
+  - enabled: 1
+    path: "Assets/Projects/Samples/60_\u30B7\u30FC\u30F3\u9077\u79FB/\u30B7\u30FC\u30F3\u9077\u79FB_Overlay.unity"
+    guid: 49c41485e2cb4d1ea3a755d44033abc1
+  - enabled: 1
+    path: "Assets/Projects/Samples/20_\u30B2\u30FC\u30B8/\u30B2\u30FC\u30B8.unity"
+    guid: b5e970da56344a3a93e6ee23159124df
+  - enabled: 1
+    path: Assets/Projects/Samples/33_FadeScreen/FadeScreen.unity
+    guid: bcec782cd74e4cd28cabdec90d81a060
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 4730e9b3974bbf64d8a2ba08543994af, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: de728af38da6e784a88849ed095b9b53, type: 3}

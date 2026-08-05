@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Projects._22_ObjectGroupSwitcher
+namespace Projects._23_ObjectGroupSwitcher
 {
     /// <summary>
     /// ObjectGroupSwitcher / ObjectGroup のデモ用スクリプト。

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Projects._02_アイテムデータ
+namespace Projects._50_アイテムデータ
 {
     [CreateAssetMenu(fileName = "DemoData", menuName = "MyUtilsProject/DemoData")]
     public class DemoData : ScriptableObject

@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Projects._20_CustomScrollView
+namespace Projects._22_CustomScrollView
 {
     public class DemoScrollViewItem : CustomScrollViewItem
     {

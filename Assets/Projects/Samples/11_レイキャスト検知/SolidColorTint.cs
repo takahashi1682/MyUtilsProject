@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Projects._15_レイキャスト検知
+namespace Projects._11_レイキャスト検知
 {
     /// <summary>
     /// 画像(Sprite)を使わずに、MeshRendererのマテリアルを単色に着色するデモ用の補助スクリプト。

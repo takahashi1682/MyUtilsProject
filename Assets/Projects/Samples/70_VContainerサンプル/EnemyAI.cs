@@ -2,7 +2,7 @@ using MyUtils.VContainerExtensions;
 using UnityEngine;
 using VContainer;
 
-namespace Projects._10_VContainerサンプル
+namespace Projects._70_VContainerサンプル
 {
     public class EnemyAI : MonoBehaviour, IScopeInitializable
     {

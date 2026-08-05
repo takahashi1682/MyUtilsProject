@@ -3,7 +3,7 @@ using MyUtils.CustomScrollView;
 using TMPro;
 using UnityEngine;
 
-namespace Projects._20_CustomScrollView
+namespace Projects._22_CustomScrollView
 {
     /// <summary>
     /// CustomScrollView / CustomScrollViewItem のデモ用スクリプト。

@@ -1,7 +1,7 @@
 using MyUtils.Parameter.Basic;
 using UnityEngine;
 
-namespace Projects._08_パラメータ
+namespace Projects._40_パラメータ
 {
     /// <summary>
     /// Parameter系（Health / Level / Exp）のデモ用スクリプト

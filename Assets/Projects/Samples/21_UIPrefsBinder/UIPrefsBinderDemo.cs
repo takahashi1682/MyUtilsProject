@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Projects._17_UIPrefsBinder
+namespace Projects._21_UIPrefsBinder
 {
     /// <summary>
     /// UIPrefsBinder系（Slider/Toggle/Dropdown/InputField）のデモ用スクリプト。

@@ -1,6 +1,6 @@
 using MyUtils.DataStore;
 
-namespace Projects._03_データ保存
+namespace Projects._51_データ保存
 {
     public class DemoSaveDataStore : AbstractDataStore<DemoSaveData, DemoSaveDataAsset>
     {

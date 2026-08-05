@@ -5,7 +5,7 @@ using MyUtils.Movement;
 using TMPro;
 using UnityEngine;
 
-namespace Projects._23_小物ユーティリティ集
+namespace Projects._90_小物ユーティリティ集
 {
     /// <summary>
     /// MyUtilsの小物ユーティリティ群（DelayDestroy / TimeScaler / OnBecameInvisibleDestroy /

@@ -2,7 +2,7 @@ using MyUtils.Csv;
 using MyUtils.TalkUtils;
 using UnityEngine;
 
-namespace Projects._07_会話システム
+namespace Projects._42_会話システム
 {
     /// <summary>
     /// TalkUtils（TalkManager / LineViewer）のデモ用スクリプト

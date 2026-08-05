@@ -2,7 +2,7 @@ using MyUtils.VContainerExtensions;
 using VContainer;
 using VContainer.Unity;
 
-namespace Projects._10_VContainerサンプル
+namespace Projects._70_VContainerサンプル
 {
     /// <summary>
     /// EnemyオブジェクトのScopeRoot

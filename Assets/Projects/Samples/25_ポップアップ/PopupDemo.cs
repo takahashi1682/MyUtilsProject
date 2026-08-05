@@ -1,7 +1,7 @@
 using MyUtils.PopupWindow;
 using UnityEngine;
 
-namespace Projects._60_ポップアップ
+namespace Projects._25_ポップアップ
 {
     public class PopupDemo : MonoBehaviour
     {

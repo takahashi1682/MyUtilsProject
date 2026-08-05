@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Projects._19_FadeScreen
+namespace Projects._33_FadeScreen
 {
     /// <summary>
     /// FadeScreenManager / FadeSetting のデモ用スクリプト。

@@ -2,7 +2,7 @@ using MyUtils.AnimatorUtils;
 using R3;
 using UnityEngine;
 
-namespace Projects._05_Animatorの購読
+namespace Projects._31_Animatorの購読
 {
     public enum EAnimatorLayer
     {

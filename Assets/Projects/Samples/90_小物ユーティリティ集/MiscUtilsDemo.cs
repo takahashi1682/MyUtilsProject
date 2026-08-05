@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using MyUtils.Misc;
+using MyUtils.Movement;
 using TMPro;
 using UnityEngine;
 
@@ -9,8 +10,8 @@ namespace Projects._23_小物ユーティリティ集
     /// <summary>
     /// MyUtilsの小物ユーティリティ群（DelayDestroy / TimeScaler / OnBecameInvisibleDestroy /
     /// GradientImage / MaterialOffsetMover / SpriteScroller / PlaySEOnSliderChanged /
-    /// ProjectVersionViewer / SerializableKeyPair / CustomBounds / ParticleSystemSimulator）の
-    /// まとめデモ用スクリプト。ObjectMover / ObjectRotator も補助的に使用しています。
+    /// ProjectVersionViewer / SerializableKeyPair / CustomBounds / ParticleSystemSimulator /
+    /// DelayTrack）のまとめデモ用スクリプト。ObjectMover / ObjectRotator も補助的に使用しています。
     /// </summary>
     public class MiscUtilsDemo : MonoBehaviour
     {
@@ -36,6 +37,13 @@ namespace Projects._23_小物ユーティリティ集
         [Header("⑪ ParticleSystemSimulator")]
         [SerializeField] private GameObject _particleTarget;
 
+        [Header("⑫ DelayTrack")]
+        [SerializeField] private RectTransform _delayTrackTarget;
+        [SerializeField] private DelayTrack _delayTrack;
+        [SerializeField] private float _delayTrackMoveRange = 200f;
+        [SerializeField] private float _delayTrackMoveSpeed = 100f;
+        private Vector2 _delayTrackTargetOrigin;
+
         private static Gradient BuildGradient(Color top, Color bottom)
         {
             var gradient = new Gradient();
@@ -53,11 +61,17 @@ namespace Projects._23_小物ユーティリティ集
             _gradientImage.SetGradient(WarmGradient);
 
             _itemsText.text = string.Join("\n", _items.Select(pair => $"{pair.Key}: {pair.Value}"));
+
+            _delayTrackTargetOrigin = _delayTrackTarget.anchoredPosition;
         }
 
         private void Update()
         {
             _timeScaleText.text = $"Time.timeScale: {Time.timeScale:F2}";
+
+            // ⑫ DelayTrackのTargetを左右に往復させる（FollowerがDelayTrackで遅延追従する）
+            float offset = Mathf.PingPong(Time.time * _delayTrackMoveSpeed, _delayTrackMoveRange) - _delayTrackMoveRange / 2f;
+            _delayTrackTarget.anchoredPosition = _delayTrackTargetOrigin + new Vector2(offset, 0f);
         }
 
         // ---- ① DelayDestroy ----
@@ -85,5 +99,10 @@ namespace Projects._23_小物ユーティリティ集
 
         // ---- ⑪ ParticleSystemSimulator ----
         public void OnToggleParticle(bool isOn) => _particleTarget.SetActive(isOn);
+
+        // ---- ⑫ DelayTrack ----
+        public void OnToggleDelayTrackMove(bool isOn) => _delayTrack.TrackMove = isOn ? ETrackMode.Delay : ETrackMode.None;
+        public void OnToggleDelayTrackLook(bool isOn) => _delayTrack.TrackLook = isOn ? ETrackMode.Delay : ETrackMode.None;
+        public void OnRotateDelayTrackTarget() => _delayTrackTarget.Rotate(0f, 0f, 90f);
     }
 }

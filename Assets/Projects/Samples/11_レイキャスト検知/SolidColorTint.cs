@@ -10,12 +10,20 @@ namespace Projects._11_レイキャスト検知
     [RequireComponent(typeof(MeshRenderer))]
     public class SolidColorTint : MonoBehaviour
     {
+        private static readonly int BaseColor = Shader.PropertyToID("_BaseColor");
+
         [SerializeField] private Color _color = Color.white;
 
         private void Awake()
         {
             var renderer = GetComponent<MeshRenderer>();
-            renderer.material.color = _color;
+
+            // renderer.materialでインスタンス化すると複製マテリアルがリークするため、
+            // MaterialPropertyBlock経由でURPシェーダーの色プロパティ(_BaseColor)を設定する。
+            var block = new MaterialPropertyBlock();
+            renderer.GetPropertyBlock(block);
+            block.SetColor(BaseColor, _color);
+            renderer.SetPropertyBlock(block);
         }
     }
 }

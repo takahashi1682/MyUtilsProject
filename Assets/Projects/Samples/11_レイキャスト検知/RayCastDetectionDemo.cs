@@ -7,8 +7,8 @@ using UnityEngine.InputSystem;
 namespace Projects._11_レイキャスト検知
 {
     /// <summary>
-    /// RayCastDetection系（GroundDetection2D / WallDetection2D / HoleDetection2D）のデモ用スクリプト
-    /// 矢印キーでプレイヤーを自由に動かし、各センサーのON/OFFをリアルタイムに確認できる。
+    /// RayCastDetection系（RayCastDetection / LineCastDetection / BoxCastDetection）のデモ用スクリプト
+    /// WASDでプレイヤー（青い四角）を自由に動かし、各センサーのON/OFFをリアルタイムに確認できる。
     /// </summary>
     public class RayCastDetectionDemo : MonoBehaviour
     {
@@ -19,9 +19,9 @@ namespace Projects._11_レイキャスト検知
         [SerializeField] private Vector2 _moveLimitMax = new(7.5f, 1.5f);
 
         [Header("Sensors")]
-        [SerializeField] private GroundDetection2D _groundDetection;
-        [SerializeField] private WallDetection2D _wallDetection;
-        [SerializeField] private HoleDetection2D _holeDetection;
+        [SerializeField] private RayCastDetection _groundDetection;
+        [SerializeField] private LineCastDetection _wallDetection;
+        [SerializeField] private MyUtils.RayCastDetection.BoxCastDetection _holeDetection;
 
         [Header("Status UI")]
         [SerializeField] private TextMeshProUGUI _groundStatusText;
@@ -30,9 +30,12 @@ namespace Projects._11_レイキャスト検知
 
         private void Awake()
         {
-            _groundDetection.IsGround.Subscribe(v => SetStatus(_groundStatusText, "IsGround", v)).AddTo(this);
-            _wallDetection.IsWall.Subscribe(v => SetStatus(_wallStatusText, "IsWall", v)).AddTo(this);
-            _holeDetection.IsHole.Subscribe(v => SetStatus(_holeStatusText, "IsHole", v)).AddTo(this);
+            _groundDetection.IsHit.Subscribe(v => SetStatus(_groundStatusText, "IsGround", v)).AddTo(this);
+            _wallDetection.IsHit.Subscribe(v => SetStatus(_wallStatusText, "IsWall", v)).AddTo(this);
+
+            // HoleDetectionはBoxCastが「何かに当たった」= 足場がある状態を表すため、
+            // 「穴（足場が無い）」を意味するIsHoleは当たり判定を反転させたもの。
+            _holeDetection.IsHit.Subscribe(v => SetStatus(_holeStatusText, "IsHole", !v)).AddTo(this);
         }
 
         private void Update()

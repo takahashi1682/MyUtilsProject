@@ -1,4 +1,4 @@
-using MyUtils.RayCastDetection;
+using MyUtils.Detection;
 using R3;
 using TMPro;
 using UnityEngine;
@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 namespace Projects._11_レイキャスト検知
 {
     /// <summary>
-    /// RayCastDetection系（RayCastDetection / LineCastDetection / BoxCastDetection）のデモ用スクリプト
+    /// RayCastDetection系（RayCastDetection / LineCastDetection / BoxCastDetection / SphereCastDetection / CapsuleCastDetection）のデモ用スクリプト
     /// WASDでプレイヤー（青い四角）を自由に動かし、各センサーのON/OFFをリアルタイムに確認できる。
     /// </summary>
     public class RayCastDetectionDemo : MonoBehaviour
@@ -21,12 +21,16 @@ namespace Projects._11_レイキャスト検知
         [Header("Sensors")]
         [SerializeField] private RayCastDetection _groundDetection;
         [SerializeField] private LineCastDetection _wallDetection;
-        [SerializeField] private MyUtils.RayCastDetection.BoxCastDetection _holeDetection;
+        [SerializeField] private BoxCastDetection _holeDetection;
+        [SerializeField] private SphereCastDetection _sphereDetection;
+        [SerializeField] private CapsuleCastDetection _capsuleDetection;
 
         [Header("Status UI")]
         [SerializeField] private TextMeshProUGUI _groundStatusText;
         [SerializeField] private TextMeshProUGUI _wallStatusText;
         [SerializeField] private TextMeshProUGUI _holeStatusText;
+        [SerializeField] private TextMeshProUGUI _sphereStatusText;
+        [SerializeField] private TextMeshProUGUI _capsuleStatusText;
 
         private void Awake()
         {
@@ -36,6 +40,12 @@ namespace Projects._11_レイキャスト検知
             // HoleDetectionはBoxCastが「何かに当たった」= 足場がある状態を表すため、
             // 「穴（足場が無い）」を意味するIsHoleは当たり判定を反転させたもの。
             _holeDetection.IsHit.Subscribe(v => SetStatus(_holeStatusText, "IsHole", !v)).AddTo(this);
+
+            // SphereCastDetectionで足元の地面を丸い形状で検知するデモ（GroundA/Bと同じ対象）。
+            _sphereDetection.IsHit.Subscribe(v => SetStatus(_sphereStatusText, "IsSphereHit", v)).AddTo(this);
+
+            // CapsuleCastDetectionで進行方向の壁をカプセル形状で検知するデモ（Wallと同じ対象）。
+            _capsuleDetection.IsHit.Subscribe(v => SetStatus(_capsuleStatusText, "IsCapsuleHit", v)).AddTo(this);
         }
 
         private void Update()

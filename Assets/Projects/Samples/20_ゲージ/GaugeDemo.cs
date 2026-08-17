@@ -6,7 +6,7 @@ namespace Projects._20_ゲージ
 {
     /// <summary>
     /// Gauge系（MemoryGauge / FillSegmentGauge）のデモ用スクリプト
-    /// MemoryGaugeはMemoryBinder経由でHealthと連動して自動更新されるため、
+    /// MemoryGaugeはMemoryGaugeBinder経由でHealthと連動して自動更新されるため、
     /// ここではライフ（Health）の増減ボタンと、FillSegmentGaugeをスライダーで直接操作する処理のみを行う
     /// </summary>
     public class GaugeDemo : MonoBehaviour

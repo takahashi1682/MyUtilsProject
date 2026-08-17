@@ -119,6 +119,84 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &67306402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 67306404}
+  - component: {fileID: 67306403}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &67306403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67306402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf37b927885aa9f4ca5dee8c36e8fbf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: "Assembly-CSharp::Projects._70_VContainer\u30B5\u30F3\u30D7\u30EB.GameManager"
+  _additionalScanRoots:
+  - {fileID: 1875698864}
+  - {fileID: 1789607442}
+--- !u!4 &67306404
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67306402}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.30435, y: -1.69412, z: -1.96205}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &76446923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 76446924}
+  m_Layer: 0
+  m_Name: "\u2500\u2500\u2500\u2500\u2500 UNIT \u2500\u2500\u2500\u2500\u2500"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &76446924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76446923}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &231020961
 GameObject:
   m_ObjectHideFlags: 0
@@ -312,7 +390,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 680866429}
-  - component: {fileID: 680866428}
+  - component: {fileID: 680866430}
   m_Layer: 0
   m_Name: SceneLifetimeScope
   m_TagString: Untagged
@@ -320,22 +398,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &680866428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 680866427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9594c460d2336bb48b3cca99b7de4a5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: MyUtils.Runtime::MyUtils.VContainerExtensions.SceneLifetimeScope
-  parentReference:
-    TypeName: 
-  autoRun: 1
-  autoInjectGameObjects: []
 --- !u!4 &680866429
 Transform:
   m_ObjectHideFlags: 0
@@ -351,6 +413,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &680866430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680866427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40e57a291c5b4eef8f98bbad1aa70675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MyUtils.Runtime::MyUtils.VContainerExtensions.SceneLifetimeScope
+  parentReference:
+    TypeName: "Projects._70_VContainer\u30B5\u30F3\u30D7\u30EB.RootLifetimeScope"
+  autoRun: 1
+  autoInjectGameObjects: []
+  ScopeRoot:
+    mode: 0
+    unityReference: {fileID: 67306403}
+    rawReference:
+      rid: -2
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
 --- !u!1 &974000002
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,6 +942,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55be160da7b9437597f75a4a171b470d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::Projects._10_VContainer\u30B5\u30F3\u30D7\u30EB.EnemyContainerRoot"
+  _additionalScanRoots: []
 --- !u!1 &1817104280
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,7 +983,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1875698866}
-  - component: {fileID: 1875698865}
+  - component: {fileID: 1875698867}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -902,18 +991,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1875698865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875698864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e481d6b8438f8b5468fba6ceb9532df2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Player
 --- !u!4 &1875698866
 Transform:
   m_ObjectHideFlags: 0
@@ -930,6 +1007,19 @@ Transform:
   - {fileID: 231020962}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1875698867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875698864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e481d6b8438f8b5468fba6ceb9532df2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: "Assembly-CSharp::Projects._70_VContainer\u30B5\u30F3\u30D7\u30EB.PlayerScopeRoot"
+  _additionalScanRoots: []
 --- !u!1 &1970700642
 GameObject:
   m_ObjectHideFlags: 0
@@ -1044,5 +1134,7 @@ SceneRoots:
   - {fileID: 1230692687}
   - {fileID: 1817104281}
   - {fileID: 680866429}
+  - {fileID: 67306404}
+  - {fileID: 76446924}
   - {fileID: 1875698866}
   - {fileID: 1789607444}

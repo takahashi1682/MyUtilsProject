@@ -6,7 +6,7 @@ using VContainer.Unity;
 
 namespace Projects._70_VContainerサンプル
 {
-    public class PlayerStatus : MonoBehaviour, IScopeInitializable
+    public class PlayerStatus : MonoBehaviour, IPlayerScopeInitializable
     {
         public DemoSaveData Status;
         private DemoSaveDataStore _demoDataStore;

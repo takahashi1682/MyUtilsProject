@@ -4,14 +4,11 @@ using VContainer.Unity;
 
 namespace Projects._70_VContainerサンプル
 {
-    public interface IPlayerScopeInitializable : IScopeInitializable
+    public interface IGameManagerScopeInitializable : IScopeInitializable
     {
     }
 
-    /// <summary>
-    /// PlayerオブジェクトのScopeRoot
-    /// </summary>
-    public class PlayerScopeRoot : AbstractScopeRoot<IPlayerScopeInitializable>, IGameManagerScopeInitializable
+    public class GameManager : AbstractScopeRoot<IGameManagerScopeInitializable>, IScopeInitializable
     {
         public override void OnRegister(IContainerBuilder builder)
         {

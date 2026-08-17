@@ -1,6 +1,5 @@
 %YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!29 &1
+%TAG !u! tag:unity3d.com,2011:--- !u!29 &1
 OcclusionCullingSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -676,7 +675,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Health / Level / Exp（AbstractIntParameter）の値を、SliderBinder・GradientBinder・IntBinder・\nRateToTextBinder・ViewSwitchBinder・FloatDoTweenBinder で画面に反映しています。"
+  m_text: "Health / Level / Exp（AbstractIntParameter）の値を、SliderBinder・RateToGradientBinder・IntBinder・\nRateToTextBinder・ViewSwitchBinder・FloatAnimatedBinder で画面に反映しています。"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1182,7 +1181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 125d7621839076a4e91d617af6c9c6b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: MyUtils.Runtime::MyUtils.UIBinder.SliderBinder
-  _target:
+  _inRate:
     mode: 0
     unityReference: {fileID: 600000312}
     rawReference: {rid: -2}
@@ -1201,7 +1200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db29e45dd7576ae468196ee54f6859f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: MyUtils.Runtime::MyUtils.UIBinder.GradientBinder
-  _target:
+  _inRate:
     mode: 0
     unityReference: {fileID: 600000312}
     rawReference: {rid: -2}
@@ -1392,7 +1391,7 @@ MonoBehaviour:
     mode: 0
     unityReference: {fileID: 600000312}
     rawReference: {rid: -2}
-  _outText: {fileID: 600000132}
+  Target: {fileID: 600000132}
   _textFormat: "現在値: {0} / 100"
   references:
     version: 2
@@ -1546,12 +1545,12 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd2946ad2fb06214a81a1eb57f55fad2, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: MyUtils.Runtime::MyUtils.UIBinder.FloatDoTweenBinder
+  m_EditorClassIdentifier: MyUtils.Runtime::MyUtils.UIBinder.FloatAnimatedBinder
   _inValue:
     mode: 0
     unityReference: {fileID: 600000312}
     rawReference: {rid: -2}
-  _outText: {fileID: 600000142}
+  Target: {fileID: 600000142}
   _textFormat: "アニメーション表示: {0:F0}"
   _duration: 0.5
   references:
@@ -1707,11 +1706,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b7b8fef9ce548448af5e1264b29eb74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: MyUtils.Runtime::MyUtils.UIBinder.RateToTextBinder
-  _target:
+  _inRate:
     mode: 0
     unityReference: {fileID: 600000312}
     rawReference: {rid: -2}
-  _text: {fileID: 600000152}
+  Target: {fileID: 600000152}
   _messages:
   - 瀕死
   - 警戒
@@ -2732,7 +2731,7 @@ MonoBehaviour:
     mode: 0
     unityReference: {fileID: 600000322}
     rawReference: {rid: -2}
-  _outText: {fileID: 600000232}
+  Target: {fileID: 600000232}
   _textFormat: "Lv. {0}"
   references:
     version: 2
@@ -3025,7 +3024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 125d7621839076a4e91d617af6c9c6b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: MyUtils.Runtime::MyUtils.UIBinder.SliderBinder
-  _target:
+  _inRate:
     mode: 0
     unityReference: {fileID: 600000332}
     rawReference: {rid: -2}
@@ -3186,7 +3185,7 @@ MonoBehaviour:
     mode: 0
     unityReference: {fileID: 600000332}
     rawReference: {rid: -2}
-  _outText: {fileID: 600000282}
+  Target: {fileID: 600000282}
   _textFormat: "EXP {0} / 100"
   references:
     version: 2

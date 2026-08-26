@@ -18,5 +18,9 @@ namespace Projects._70_VContainerサンプル
             // SceneLifetimeScope に自身を登録する
             builder.RegisterComponent(this);
         }
+
+        public override void OnAllResolved()
+        {
+        }
     }
 }

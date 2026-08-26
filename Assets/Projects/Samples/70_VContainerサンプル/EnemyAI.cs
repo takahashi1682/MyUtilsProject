@@ -18,7 +18,7 @@ namespace Projects._70_VContainerサンプル
             _playerScope = resolver.Resolve<PlayerScopeRoot>();
         }
 
-        private void Start()
+        public void OnAllResolved()
         {
             // PlayerScopeRoot に登録された PlayerStatus を取得する
             var playerStatus = _playerScope.Container.Resolve<PlayerStatus>();

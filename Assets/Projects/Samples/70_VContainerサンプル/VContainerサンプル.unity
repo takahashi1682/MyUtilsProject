@@ -242,8 +242,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::Projects._10_VContainer\u30B5\u30F3\u30D7\u30EB.PlayerStatus"
   Status:
-    PlayerName: 
-    Score: 0
+    PlayerName: "\u306D\u3053"
+    Score: 99
 --- !u!1 &430463445
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,16 +429,7 @@ MonoBehaviour:
     TypeName: "Projects._70_VContainer\u30B5\u30F3\u30D7\u30EB.RootLifetimeScope"
   autoRun: 1
   autoInjectGameObjects: []
-  ScopeRoot:
-    mode: 0
-    unityReference: {fileID: 67306403}
-    rawReference:
-      rid: -2
-  references:
-    version: 2
-    RefIds:
-    - rid: -2
-      type: {class: , ns: , asm: }
+  ScopeRoot: {fileID: 67306403}
 --- !u!1 &974000002
 GameObject:
   m_ObjectHideFlags: 0

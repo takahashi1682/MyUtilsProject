@@ -23,7 +23,7 @@ namespace Projects._70_VContainerサンプル
             _demoDataStore = resolver.Resolve<DemoSaveDataStore>();
         }
 
-        private void Start()
+        public void OnAllResolved()
         {
             Status = _demoDataStore.CurrentValue;
         }

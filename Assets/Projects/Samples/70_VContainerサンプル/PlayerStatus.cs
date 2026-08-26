@@ -9,7 +9,6 @@ namespace Projects._70_VContainerサンプル
     public class PlayerStatus : MonoBehaviour, IPlayerScopeInitializable
     {
         public DemoSaveData Status;
-        private DemoSaveDataStore _demoDataStore;
 
         public void OnRegister(IContainerBuilder builder)
         {
@@ -20,12 +19,8 @@ namespace Projects._70_VContainerサンプル
         public void OnResolve(IObjectResolver resolver)
         {
             // RootLifetimeScope に登録した DemoSaveDataStore を取得する
-            _demoDataStore = resolver.Resolve<DemoSaveDataStore>();
-        }
-
-        public void OnAllResolved()
-        {
-            Status = _demoDataStore.CurrentValue;
+            var demoDataStore = resolver.Resolve<DemoSaveDataStore>();
+            Status = demoDataStore.CurrentValue;
         }
     }
 }

@@ -16,7 +16,7 @@ namespace Projects._70_VContainerサンプル
             builder.RegisterComponent(this);
         }
 
-        public override void OnAllResolved()
+        public override void OnResolve(IObjectResolver resolver)
         {
         }
     }

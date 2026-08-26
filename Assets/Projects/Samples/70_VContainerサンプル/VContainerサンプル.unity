@@ -429,7 +429,7 @@ MonoBehaviour:
     TypeName: "Projects._70_VContainer\u30B5\u30F3\u30D7\u30EB.RootLifetimeScope"
   autoRun: 1
   autoInjectGameObjects: []
-  ScopeRoot: {fileID: 67306403}
+  SceneScopeRoot: {fileID: 67306403}
 --- !u!1 &974000002
 GameObject:
   m_ObjectHideFlags: 0

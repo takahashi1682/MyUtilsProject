@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using MyUtils;
 using MyUtils.Misc;
 using MyUtils.Movement;
 using TMPro;
@@ -11,7 +12,8 @@ namespace Projects._90_小物ユーティリティ集
     /// MyUtilsの小物ユーティリティ群（DelayDestroy / TimeScaler / OnBecameInvisibleDestroy /
     /// GradientImage / MaterialOffsetMover / SpriteScroller / PlaySEOnSliderChanged /
     /// ProjectVersionViewer / SerializableKeyPair / CustomBounds / ParticleSystemSimulator /
-    /// DelayTrack）のまとめデモ用スクリプト。ObjectMover / ObjectRotator も補助的に使用しています。
+    /// DelayTrack / MonoBehaviourLifecycleEvents）のまとめデモ用スクリプト。
+    /// ObjectMover / ObjectRotator も補助的に使用しています。
     /// </summary>
     public class MiscUtilsDemo : MonoBehaviour
     {
@@ -43,6 +45,10 @@ namespace Projects._90_小物ユーティリティ集
         [SerializeField] private float _delayTrackMoveRange = 200f;
         [SerializeField] private float _delayTrackMoveSpeed = 100f;
         private Vector2 _delayTrackTargetOrigin;
+
+        [Header("⑬ MonoBehaviourLifecycleEvents")]
+        [SerializeField] private TextMeshProUGUI _lifecycleLogText;
+        private GameObject _lifecycleInstance;
 
         private static Gradient BuildGradient(Color top, Color bottom)
         {
@@ -104,5 +110,39 @@ namespace Projects._90_小物ユーティリティ集
         public void OnToggleDelayTrackMove(bool isOn) => _delayTrack.TrackMove = isOn ? ETrackMode.Delay : ETrackMode.None;
         public void OnToggleDelayTrackLook(bool isOn) => _delayTrack.TrackLook = isOn ? ETrackMode.Delay : ETrackMode.None;
         public void OnRotateDelayTrackTarget() => _delayTrackTarget.Rotate(0f, 0f, 90f);
+
+        // ---- ⑬ MonoBehaviourLifecycleEvents ----
+        // Awake/Start/OnEnable/OnDisable/OnDestroyの発火順をログ表示で確認できるようにする。
+        // 非アクティブな状態でリスナーを登録してからSetActive(true)することで、
+        // 最初のAwake/OnEnableも取りこぼさずに記録している。
+        public void OnSpawnLifecycleObject()
+        {
+            if (_lifecycleInstance != null) return;
+
+            _lifecycleInstance = new GameObject("LifecycleDemoObject");
+            _lifecycleInstance.SetActive(false);
+
+            var events = _lifecycleInstance.AddComponent<MonoBehaviourLifecycleEvents>();
+            events.AwakeEvent.AddListener(() => LogLifecycle("Awake"));
+            events.StartEvent.AddListener(() => LogLifecycle("Start"));
+            events.EnableEvent.AddListener(() => LogLifecycle("OnEnable"));
+            events.DisableEvent.AddListener(() => LogLifecycle("OnDisable"));
+            events.DestroyEvent.AddListener(() => LogLifecycle("OnDestroy"));
+
+            _lifecycleLogText.text = string.Empty;
+            _lifecycleInstance.SetActive(true);
+        }
+
+        public void OnDestroyLifecycleObject()
+        {
+            if (_lifecycleInstance == null) return;
+            Destroy(_lifecycleInstance);
+            _lifecycleInstance = null;
+        }
+
+        private void LogLifecycle(string eventName)
+        {
+            _lifecycleLogText.text += $"{eventName}\n";
+        }
     }
 }

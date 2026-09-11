@@ -2601,7 +2601,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 700000332}
-        m_TargetAssemblyTypeName: Projects._09_カウントダウン.CountdownDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._41_カウントダウン.CountdownDemo, Assembly-CSharp
         m_MethodName: OnStartButtonClicked
         m_Mode: 1
         m_Arguments:
@@ -2871,7 +2871,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 700000332}
-        m_TargetAssemblyTypeName: Projects._09_カウントダウン.CountdownDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._41_カウントダウン.CountdownDemo, Assembly-CSharp
         m_MethodName: OnPauseButtonClicked
         m_Mode: 1
         m_Arguments:
@@ -3141,7 +3141,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 700000332}
-        m_TargetAssemblyTypeName: Projects._09_カウントダウン.CountdownDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._41_カウントダウン.CountdownDemo, Assembly-CSharp
         m_MethodName: OnResetButtonClicked
         m_Mode: 1
         m_Arguments:
@@ -3368,17 +3368,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 700000310}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 946ee7975a164b889b536b251ed2016b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: MyUtils.Runtime::MyUtils.Countdown.StartTimer
+  m_Script: {fileID: 11500000, guid: a0265253a40d9e94ba832bd5898d268b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: MyUtils.Runtime::MyUtils.BasicTimer
   _current:
     value: 3
   _min:
     value: 0
   _max:
     value: 3
-  _isPlay:
+  <IsPlay>k__BackingField:
     value: 0
+  <TimerType>k__BackingField: 0
 --- !u!1 &700000320
 GameObject:
   m_ObjectHideFlags: 0
@@ -3420,17 +3421,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 700000320}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a535ee8b479b46459dfb4a8f2971fc48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: MyUtils.Runtime::MyUtils.Countdown.GameTimer
+  m_Script: {fileID: 11500000, guid: a0265253a40d9e94ba832bd5898d268b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: MyUtils.Runtime::MyUtils.BasicTimer
   _current:
     value: 30
   _min:
     value: 0
   _max:
     value: 30
-  _isPlay:
+  <IsPlay>k__BackingField:
     value: 0
+  <TimerType>k__BackingField: 0
 --- !u!1 &700000330
 GameObject:
   m_ObjectHideFlags: 0

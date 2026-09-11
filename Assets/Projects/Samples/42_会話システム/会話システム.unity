@@ -830,7 +830,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 400000172}
-        m_TargetAssemblyTypeName: Projects._07_会話システム.TalkDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._42_会話システム.TalkDemo, Assembly-CSharp
         m_MethodName: OnStartGreeting
         m_Mode: 1
         m_Arguments:
@@ -1100,7 +1100,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 400000172}
-        m_TargetAssemblyTypeName: Projects._07_会話システム.TalkDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._42_会話システム.TalkDemo, Assembly-CSharp
         m_MethodName: OnStartDialogue
         m_Mode: 1
         m_Arguments:

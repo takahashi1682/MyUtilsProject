@@ -1,4 +1,4 @@
-using MyUtils.Detection;
+using MyUtils.Detector;
 using R3;
 using TMPro;
 using UnityEngine;
@@ -19,11 +19,11 @@ namespace Projects._11_レイキャスト検知
         [SerializeField] private Vector2 _moveLimitMax = new(7.5f, 1.5f);
 
         [Header("Sensors")]
-        [SerializeField] private RayCastDetection _groundDetection;
-        [SerializeField] private LineCastDetection _wallDetection;
-        [SerializeField] private BoxCastDetection _holeDetection;
-        [SerializeField] private SphereCastDetection _sphereDetection;
-        [SerializeField] private CapsuleCastDetection _capsuleDetection;
+        [SerializeField] private RayCastDetector _groundDetection;
+        [SerializeField] private LineCastDetector _wallDetection;
+        [SerializeField] private BoxCastDetector _holeDetection;
+        [SerializeField] private SphereCastDetector _sphereDetection;
+        [SerializeField] private CapsuleCastDetector _capsuleDetection;
 
         [Header("Status UI")]
         [SerializeField] private TextMeshProUGUI _groundStatusText;

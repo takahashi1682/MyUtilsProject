@@ -1175,8 +1175,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 522}
-        m_TargetAssemblyTypeName: "Projects._16_\u30B9\u30D7\u30E9\u30A4\u30C8\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3.SpriteAnimationDemo,
-          Assembly-CSharp"
+        m_TargetAssemblyTypeName: Projects._32_スプライトアニメーション.SpriteAnimationDemo, Assembly-CSharp
         m_MethodName: OnSetModeOne
         m_Mode: 1
         m_Arguments:
@@ -1446,8 +1445,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 522}
-        m_TargetAssemblyTypeName: "Projects._16_\u30B9\u30D7\u30E9\u30A4\u30C8\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3.SpriteAnimationDemo,
-          Assembly-CSharp"
+        m_TargetAssemblyTypeName: Projects._32_スプライトアニメーション.SpriteAnimationDemo, Assembly-CSharp
         m_MethodName: OnSetModeRepeat
         m_Mode: 1
         m_Arguments:
@@ -1717,8 +1715,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 522}
-        m_TargetAssemblyTypeName: "Projects._16_\u30B9\u30D7\u30E9\u30A4\u30C8\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3.SpriteAnimationDemo,
-          Assembly-CSharp"
+        m_TargetAssemblyTypeName: Projects._32_スプライトアニメーション.SpriteAnimationDemo, Assembly-CSharp
         m_MethodName: OnSetModePingPong
         m_Mode: 1
         m_Arguments:
@@ -1988,8 +1985,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 522}
-        m_TargetAssemblyTypeName: "Projects._16_\u30B9\u30D7\u30E9\u30A4\u30C8\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3.SpriteAnimationDemo,
-          Assembly-CSharp"
+        m_TargetAssemblyTypeName: Projects._32_スプライトアニメーション.SpriteAnimationDemo, Assembly-CSharp
         m_MethodName: OnPlay
         m_Mode: 1
         m_Arguments:
@@ -2259,8 +2255,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 522}
-        m_TargetAssemblyTypeName: "Projects._16_\u30B9\u30D7\u30E9\u30A4\u30C8\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3.SpriteAnimationDemo,
-          Assembly-CSharp"
+        m_TargetAssemblyTypeName: Projects._32_スプライトアニメーション.SpriteAnimationDemo, Assembly-CSharp
         m_MethodName: OnStop
         m_Mode: 1
         m_Arguments:
@@ -2537,8 +2532,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 522}
-        m_TargetAssemblyTypeName: "Projects._16_\u30B9\u30D7\u30E9\u30A4\u30C8\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3.SpriteAnimationDemo,
-          Assembly-CSharp"
+        m_TargetAssemblyTypeName: Projects._32_スプライトアニメーション.SpriteAnimationDemo, Assembly-CSharp
         m_MethodName: OnFpsSliderChanged
         m_Mode: 0
         m_Arguments:

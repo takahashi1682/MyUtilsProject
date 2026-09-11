@@ -833,7 +833,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 900000242}
-        m_TargetAssemblyTypeName: Projects._12_オーディオ.AudioDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._43_オーディオ.AudioDemo, Assembly-CSharp
         m_MethodName: OnPlayBgm1
         m_Mode: 1
         m_Arguments:
@@ -1103,7 +1103,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 900000242}
-        m_TargetAssemblyTypeName: Projects._12_オーディオ.AudioDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._43_オーディオ.AudioDemo, Assembly-CSharp
         m_MethodName: OnCrossFadeToBgm2
         m_Mode: 1
         m_Arguments:
@@ -1373,7 +1373,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 900000242}
-        m_TargetAssemblyTypeName: Projects._12_オーディオ.AudioDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._43_オーディオ.AudioDemo, Assembly-CSharp
         m_MethodName: OnFadeOutBgm
         m_Mode: 1
         m_Arguments:
@@ -1643,7 +1643,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 900000242}
-        m_TargetAssemblyTypeName: Projects._12_オーディオ.AudioDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._43_オーディオ.AudioDemo, Assembly-CSharp
         m_MethodName: OnPlaySE
         m_Mode: 1
         m_Arguments:
@@ -1913,7 +1913,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 900000242}
-        m_TargetAssemblyTypeName: Projects._12_オーディオ.AudioDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._43_オーディオ.AudioDemo, Assembly-CSharp
         m_MethodName: OnPlayVoice
         m_Mode: 1
         m_Arguments:
@@ -2183,7 +2183,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 900000242}
-        m_TargetAssemblyTypeName: Projects._12_オーディオ.AudioDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._43_オーディオ.AudioDemo, Assembly-CSharp
         m_MethodName: OnStopAll
         m_Mode: 1
         m_Arguments:

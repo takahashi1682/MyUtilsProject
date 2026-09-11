@@ -920,7 +920,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1204}
-        m_TargetAssemblyTypeName: Projects._23_小物ユーティリティ集.MiscUtilsDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._90_小物ユーティリティ集.MiscUtilsDemo, Assembly-CSharp
         m_MethodName: OnSpawnDelayDestroy
         m_Mode: 1
         m_Arguments:
@@ -1567,7 +1567,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1204}
-        m_TargetAssemblyTypeName: Projects._23_小物ユーティリティ集.MiscUtilsDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._90_小物ユーティリティ集.MiscUtilsDemo, Assembly-CSharp
         m_MethodName: OnToggleTimeScale
         m_Mode: 6
         m_Arguments:
@@ -2076,7 +2076,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1204}
-        m_TargetAssemblyTypeName: Projects._23_小物ユーティリティ集.MiscUtilsDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._90_小物ユーティリティ集.MiscUtilsDemo, Assembly-CSharp
         m_MethodName: OnSpawnInvisibleDestroy
         m_Mode: 1
         m_Arguments:
@@ -2602,7 +2602,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1204}
-        m_TargetAssemblyTypeName: Projects._23_小物ユーティリティ集.MiscUtilsDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._90_小物ユーティリティ集.MiscUtilsDemo, Assembly-CSharp
         m_MethodName: OnGradientWarm
         m_Mode: 1
         m_Arguments:
@@ -2872,7 +2872,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1204}
-        m_TargetAssemblyTypeName: Projects._23_小物ユーティリティ集.MiscUtilsDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._90_小物ユーティリティ集.MiscUtilsDemo, Assembly-CSharp
         m_MethodName: OnGradientCool
         m_Mode: 1
         m_Arguments:
@@ -4820,7 +4820,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1204}
-        m_TargetAssemblyTypeName: Projects._23_小物ユーティリティ集.MiscUtilsDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._90_小物ユーティリティ集.MiscUtilsDemo, Assembly-CSharp
         m_MethodName: OnToggleParticle
         m_Mode: 6
         m_Arguments:
@@ -6352,7 +6352,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1204}
-        m_TargetAssemblyTypeName: Projects._23_小物ユーティリティ集.MiscUtilsDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._90_小物ユーティリティ集.MiscUtilsDemo, Assembly-CSharp
         m_MethodName: OnToggleDelayTrackMove
         m_Mode: 6
         m_Arguments:
@@ -6714,7 +6714,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1204}
-        m_TargetAssemblyTypeName: Projects._23_小物ユーティリティ集.MiscUtilsDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._90_小物ユーティリティ集.MiscUtilsDemo, Assembly-CSharp
         m_MethodName: OnToggleDelayTrackLook
         m_Mode: 6
         m_Arguments:
@@ -7073,7 +7073,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1204}
-        m_TargetAssemblyTypeName: Projects._23_小物ユーティリティ集.MiscUtilsDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._90_小物ユーティリティ集.MiscUtilsDemo, Assembly-CSharp
         m_MethodName: OnRotateDelayTrackTarget
         m_Mode: 1
         m_Arguments:

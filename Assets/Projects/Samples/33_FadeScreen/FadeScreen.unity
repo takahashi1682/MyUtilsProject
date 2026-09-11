@@ -1024,7 +1024,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1110}
-        m_TargetAssemblyTypeName: Projects._19_FadeScreen.FadeScreenDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._33_FadeScreen.FadeScreenDemo, Assembly-CSharp
         m_MethodName: OnDurationChanged
         m_Mode: 0
         m_Arguments:
@@ -1416,7 +1416,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1110}
-        m_TargetAssemblyTypeName: Projects._19_FadeScreen.FadeScreenDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._33_FadeScreen.FadeScreenDemo, Assembly-CSharp
         m_MethodName: OnSetColorBlack
         m_Mode: 1
         m_Arguments:
@@ -1686,7 +1686,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1110}
-        m_TargetAssemblyTypeName: Projects._19_FadeScreen.FadeScreenDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._33_FadeScreen.FadeScreenDemo, Assembly-CSharp
         m_MethodName: OnSetColorWhite
         m_Mode: 1
         m_Arguments:
@@ -1956,7 +1956,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1110}
-        m_TargetAssemblyTypeName: Projects._19_FadeScreen.FadeScreenDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._33_FadeScreen.FadeScreenDemo, Assembly-CSharp
         m_MethodName: OnSetColorRed
         m_Mode: 1
         m_Arguments:
@@ -2226,7 +2226,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1110}
-        m_TargetAssemblyTypeName: Projects._19_FadeScreen.FadeScreenDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._33_FadeScreen.FadeScreenDemo, Assembly-CSharp
         m_MethodName: OnFadeOut
         m_Mode: 1
         m_Arguments:
@@ -2496,7 +2496,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1110}
-        m_TargetAssemblyTypeName: Projects._19_FadeScreen.FadeScreenDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._33_FadeScreen.FadeScreenDemo, Assembly-CSharp
         m_MethodName: OnFadeIn
         m_Mode: 1
         m_Arguments:
@@ -2766,7 +2766,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1110}
-        m_TargetAssemblyTypeName: Projects._19_FadeScreen.FadeScreenDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._33_FadeScreen.FadeScreenDemo, Assembly-CSharp
         m_MethodName: OnSimulateSceneChange
         m_Mode: 1
         m_Arguments:

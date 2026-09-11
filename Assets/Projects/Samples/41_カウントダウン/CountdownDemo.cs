@@ -1,48 +1,48 @@
-using MyUtils.Countdown;
+using MyUtils;
 using R3;
 using UnityEngine;
 
 namespace Projects._41_カウントダウン
 {
     /// <summary>
-    /// Countdown系（BasicTimer / StartTimer / GameTimer）のデモ用スクリプト
-    /// StartTimerで開始前カウントダウンを行い、終了したら自動でGameTimerの本編カウントダウンを開始する
+    /// BasicTimer(ETimerType.Countdown)のデモ用スクリプト
+    /// _startTimerで開始前カウントダウンを行い、終了したら自動で_gameTimerの本編カウントダウンを開始する
     /// </summary>
     public class CountdownDemo : MonoBehaviour
     {
-        [SerializeField] private StartTimer _startTimer;
-        [SerializeField] private GameTimer _gameTimer;
+        [SerializeField] private BasicTimer _startTimer;
+        [SerializeField] private BasicTimer _gameTimer;
 
         private void Awake()
         {
-            // 開始前カウントダウン（StartTimer）が終わったら、本編カウントダウン（GameTimer）を開始する
+            // 開始前カウントダウン(_startTimer)が終わったら、本編カウントダウン(_gameTimer)を開始する
             _startTimer.OnFinish.Subscribe(_ =>
             {
-                _gameTimer.ResetCountdown();
-                _gameTimer.StartCountdown();
+                _gameTimer.ResetTimer();
+                _gameTimer.StartTimer();
             }).AddTo(this);
         }
 
         public void OnStartButtonClicked()
         {
-            _gameTimer.StopCountdown();
-            _gameTimer.ResetCountdown();
-            _startTimer.ResetCountdown();
-            _startTimer.StartCountdown();
+            _gameTimer.StopTimer();
+            _gameTimer.ResetTimer();
+            _startTimer.ResetTimer();
+            _startTimer.StartTimer();
         }
 
         public void OnPauseButtonClicked()
         {
-            _startTimer.StopCountdown();
-            _gameTimer.StopCountdown();
+            _startTimer.StopTimer();
+            _gameTimer.StopTimer();
         }
 
         public void OnResetButtonClicked()
         {
-            _startTimer.StopCountdown();
-            _startTimer.ResetCountdown();
-            _gameTimer.StopCountdown();
-            _gameTimer.ResetCountdown();
+            _startTimer.StopTimer();
+            _startTimer.ResetTimer();
+            _gameTimer.StopTimer();
+            _gameTimer.ResetTimer();
         }
     }
 }

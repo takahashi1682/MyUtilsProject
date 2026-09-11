@@ -2121,7 +2121,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 600000342}
-        m_TargetAssemblyTypeName: Projects._08_パラメータ.ParameterDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._40_パラメータ.ParameterDemo, Assembly-CSharp
         m_MethodName: OnDamage
         m_Mode: 1
         m_Arguments:
@@ -2391,7 +2391,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 600000342}
-        m_TargetAssemblyTypeName: Projects._08_パラメータ.ParameterDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._40_パラメータ.ParameterDemo, Assembly-CSharp
         m_MethodName: OnHeal
         m_Mode: 1
         m_Arguments:
@@ -3274,7 +3274,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 600000342}
-        m_TargetAssemblyTypeName: Projects._08_パラメータ.ParameterDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._40_パラメータ.ParameterDemo, Assembly-CSharp
         m_MethodName: OnGainExp
         m_Mode: 1
         m_Arguments:

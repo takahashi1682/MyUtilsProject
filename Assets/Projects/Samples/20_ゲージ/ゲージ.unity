@@ -1433,7 +1433,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1000000352}
-        m_TargetAssemblyTypeName: "Projects._13_\u30B2\u30FC\u30B8.GaugeDemo, Assembly-CSharp"
+        m_TargetAssemblyTypeName: Projects._20_ゲージ.GaugeDemo, Assembly-CSharp
         m_MethodName: OnLoseLife
         m_Mode: 1
         m_Arguments:
@@ -1703,7 +1703,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1000000352}
-        m_TargetAssemblyTypeName: "Projects._13_\u30B2\u30FC\u30B8.GaugeDemo, Assembly-CSharp"
+        m_TargetAssemblyTypeName: Projects._20_ゲージ.GaugeDemo, Assembly-CSharp
         m_MethodName: OnGainLife
         m_Mode: 1
         m_Arguments:
@@ -2175,7 +2175,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1000000352}
-        m_TargetAssemblyTypeName: "Projects._13_\u30B2\u30FC\u30B8.GaugeDemo, Assembly-CSharp"
+        m_TargetAssemblyTypeName: Projects._20_ゲージ.GaugeDemo, Assembly-CSharp
         m_MethodName: OnMpSliderChanged
         m_Mode: 0
         m_Arguments:

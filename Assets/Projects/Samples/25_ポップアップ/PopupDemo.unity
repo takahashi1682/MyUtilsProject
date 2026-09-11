@@ -634,7 +634,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1453466539}
-        m_TargetAssemblyTypeName: MyUtils.PopupWindow.PopupDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._25_ポップアップ.PopupDemo, Assembly-CSharp
         m_MethodName: OnShowPopup
         m_Mode: 1
         m_Arguments:

@@ -903,7 +903,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 502}
-        m_TargetAssemblyTypeName: Projects._18_HTTP暗号化.HttpAndEncryptionDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._52_HTTP暗号化.HttpAndEncryptionDemo, Assembly-CSharp
         m_MethodName: OnEncrypt
         m_Mode: 1
         m_Arguments:
@@ -1173,7 +1173,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 502}
-        m_TargetAssemblyTypeName: Projects._18_HTTP暗号化.HttpAndEncryptionDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._52_HTTP暗号化.HttpAndEncryptionDemo, Assembly-CSharp
         m_MethodName: OnDecrypt
         m_Mode: 1
         m_Arguments:
@@ -1991,7 +1991,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 502}
-        m_TargetAssemblyTypeName: Projects._18_HTTP暗号化.HttpAndEncryptionDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._52_HTTP暗号化.HttpAndEncryptionDemo, Assembly-CSharp
         m_MethodName: OnSaveEncryptedFile
         m_Mode: 1
         m_Arguments:
@@ -2261,7 +2261,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 502}
-        m_TargetAssemblyTypeName: Projects._18_HTTP暗号化.HttpAndEncryptionDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._52_HTTP暗号化.HttpAndEncryptionDemo, Assembly-CSharp
         m_MethodName: OnLoadEncryptedFile
         m_Mode: 1
         m_Arguments:
@@ -2805,7 +2805,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 502}
-        m_TargetAssemblyTypeName: Projects._18_HTTP暗号化.HttpAndEncryptionDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._52_HTTP暗号化.HttpAndEncryptionDemo, Assembly-CSharp
         m_MethodName: OnSendGetRequest
         m_Mode: 1
         m_Arguments:

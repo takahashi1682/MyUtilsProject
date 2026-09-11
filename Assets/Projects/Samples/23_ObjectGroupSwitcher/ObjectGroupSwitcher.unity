@@ -896,8 +896,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1120}
-        m_TargetAssemblyTypeName: Projects._22_ObjectGroupSwitcher.ObjectGroupSwitcherDemo,
-          Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._23_ObjectGroupSwitcher.ObjectGroupSwitcherDemo, Assembly-CSharp
         m_MethodName: OnPrevious
         m_Mode: 1
         m_Arguments:
@@ -1167,8 +1166,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1120}
-        m_TargetAssemblyTypeName: Projects._22_ObjectGroupSwitcher.ObjectGroupSwitcherDemo,
-          Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._23_ObjectGroupSwitcher.ObjectGroupSwitcherDemo, Assembly-CSharp
         m_MethodName: OnNext
         m_Mode: 1
         m_Arguments:
@@ -1438,8 +1436,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1120}
-        m_TargetAssemblyTypeName: Projects._22_ObjectGroupSwitcher.ObjectGroupSwitcherDemo,
-          Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._23_ObjectGroupSwitcher.ObjectGroupSwitcherDemo, Assembly-CSharp
         m_MethodName: OnSelectTab0
         m_Mode: 1
         m_Arguments:
@@ -1709,8 +1706,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1120}
-        m_TargetAssemblyTypeName: Projects._22_ObjectGroupSwitcher.ObjectGroupSwitcherDemo,
-          Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._23_ObjectGroupSwitcher.ObjectGroupSwitcherDemo, Assembly-CSharp
         m_MethodName: OnSelectTab1
         m_Mode: 1
         m_Arguments:
@@ -1980,8 +1976,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1120}
-        m_TargetAssemblyTypeName: Projects._22_ObjectGroupSwitcher.ObjectGroupSwitcherDemo,
-          Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._23_ObjectGroupSwitcher.ObjectGroupSwitcherDemo, Assembly-CSharp
         m_MethodName: OnSelectTab2
         m_Mode: 1
         m_Arguments:

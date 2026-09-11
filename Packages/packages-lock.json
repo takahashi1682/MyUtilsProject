@@ -17,16 +17,17 @@
       "url": "https://package.openupm.com"
     },
     "com.takahashi.myutils": {
-      "version": "file:C:/Users/h.takahashi/Documents/GitHub/MyUtils",
+      "version": "https://github.com/takahashi1682/MyUtils.git",
       "depth": 0,
-      "source": "local",
+      "source": "git",
       "dependencies": {
         "com.cysharp.unitask": "2.5.11",
         "org.nuget.r3": "1.3.1",
         "com.cysharp.r3": "1.3.1",
         "net.tnrd.serializableinterface": "2.2.1",
         "jp.hadashikick.vcontainer": "1.18.0"
-      }
+      },
+      "hash": "86577a88a5adcafa871b8d0c072b327832cfcb8d"
     },
     "com.unity.2d.animation": {
       "version": "15.1.0",
@@ -365,7 +366,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "71df240ccbb4f8fce73155336cf7c249d1c3bb44"
+      "hash": "5aad6789a99485700359919f042e3b954acfa62a"
     },
     "org.nuget.microsoft.bcl.asyncinterfaces": {
       "version": "6.0.0",

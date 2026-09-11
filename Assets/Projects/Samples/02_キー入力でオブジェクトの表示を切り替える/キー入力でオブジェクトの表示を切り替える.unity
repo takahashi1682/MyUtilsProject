@@ -732,6 +732,7 @@ GameObject:
   - component: {fileID: 682465458}
   - component: {fileID: 682465462}
   - component: {fileID: 682465463}
+  - component: {fileID: 900000001}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -836,9 +837,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 682465457}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf3e68f808354bd1a69ad142fc7c26fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: MyUtils.Runtime::MyUtils.InputTrigger.ObjectActivateOnInputTrigger
+  m_Script: {fileID: 11500000, guid: 1d677d36bbec44dbafdcd01c130f7f83, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: MyUtils.Runtime::MyUtils.InputTrigger.UnityEventOnKeyTrigger
+  OnTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 900000001}
+        m_TargetAssemblyTypeName: Projects._02_キー入力でオブジェクトの表示を切り替える.ToggleObjectDemo,
+          Assembly-CSharp
+        m_MethodName: Toggle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument:
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &900000001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682465457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dc5c1e1b1384e55a2ffab358f95a326, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Projects._02_キー入力でオブジェクトの表示を切り替える.ToggleObjectDemo
+  _target: {fileID: 398791428}
 --- !u!114 &682465463
 MonoBehaviour:
   m_ObjectHideFlags: 0

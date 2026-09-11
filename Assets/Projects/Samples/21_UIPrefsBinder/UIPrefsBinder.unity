@@ -3684,7 +3684,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 502}
-        m_TargetAssemblyTypeName: Projects._17_UIPrefsBinder.UIPrefsBinderDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._21_UIPrefsBinder.UIPrefsBinderDemo, Assembly-CSharp
         m_MethodName: OnResetToDefaults
         m_Mode: 1
         m_Arguments:

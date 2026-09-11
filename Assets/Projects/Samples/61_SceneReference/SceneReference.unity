@@ -1174,7 +1174,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1079}
-        m_TargetAssemblyTypeName: Projects._21_SceneReference.SceneReferenceDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._61_SceneReference.SceneReferenceDemo, Assembly-CSharp
         m_MethodName: OnLoadSceneA
         m_Mode: 1
         m_Arguments:
@@ -1581,7 +1581,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1079}
-        m_TargetAssemblyTypeName: Projects._21_SceneReference.SceneReferenceDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._61_SceneReference.SceneReferenceDemo, Assembly-CSharp
         m_MethodName: OnLoadSceneB
         m_Mode: 1
         m_Arguments:
@@ -1988,7 +1988,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1079}
-        m_TargetAssemblyTypeName: Projects._21_SceneReference.SceneReferenceDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._61_SceneReference.SceneReferenceDemo, Assembly-CSharp
         m_MethodName: OnLoadSceneC
         m_Mode: 1
         m_Arguments:
@@ -2920,7 +2920,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1079}
-        m_TargetAssemblyTypeName: Projects._21_SceneReference.SceneReferenceDemo, Assembly-CSharp
+        m_TargetAssemblyTypeName: Projects._61_SceneReference.SceneReferenceDemo, Assembly-CSharp
         m_MethodName: OnSetCustomName
         m_Mode: 1
         m_Arguments:

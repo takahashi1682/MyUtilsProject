@@ -1,5 +1,4 @@
 using MyUtils.ObjectGroup;
-using R3;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,8 +7,10 @@ namespace Projects._23_ObjectGroupSwitcher
 {
     /// <summary>
     /// ObjectGroupSwitcher / ObjectGroup のデモ用スクリプト。
-    /// ObjectGroupSwitcherはCurrentObjectIndex(R3のReactiveProperty)の変化をSubscribeし、
-    /// 選択中のObjectGroupだけをSetAllActive(true)、他をfalseにする「タブ切替UI」の典型パターンです。
+    /// ObjectGroupSwitcherはIndexで指定した1つのObjectGroupだけをSetAllActive(true)、
+    /// 他をfalseにする「タブ切替UI」の典型パターンです。
+    /// SetActiveObject/NextObject/PreviousObjectはIndexを変更するだけで通知を発行しないため、
+    /// 呼び出し側で戻り値のIndexを見て表示を更新します。
     /// </summary>
     public class ObjectGroupSwitcherDemo : MonoBehaviour
     {
@@ -23,10 +24,10 @@ namespace Projects._23_ObjectGroupSwitcher
 
         private void Start()
         {
-            _switcher.CurrentObjectIndex.Subscribe(OnIndexChanged).AddTo(this);
+            UpdateDisplay(_switcher.Index);
         }
 
-        private void OnIndexChanged(int index)
+        private void UpdateDisplay(int index)
         {
             string name = index >= 0 && index < _tabNames.Length ? _tabNames[index] : index.ToString();
             _statusText.text = $"CurrentObjectIndex: {index} ({name})";
@@ -38,10 +39,34 @@ namespace Projects._23_ObjectGroupSwitcher
             }
         }
 
-        public void OnSelectTab0() => _switcher.SetActiveObject(0);
-        public void OnSelectTab1() => _switcher.SetActiveObject(1);
-        public void OnSelectTab2() => _switcher.SetActiveObject(2);
-        public void OnNext() => _switcher.NextObject();
-        public void OnPrevious() => _switcher.PreviousObject();
+        public void OnSelectTab0()
+        {
+            _switcher.SetActiveObject(0);
+            UpdateDisplay(_switcher.Index);
+        }
+
+        public void OnSelectTab1()
+        {
+            _switcher.SetActiveObject(1);
+            UpdateDisplay(_switcher.Index);
+        }
+
+        public void OnSelectTab2()
+        {
+            _switcher.SetActiveObject(2);
+            UpdateDisplay(_switcher.Index);
+        }
+
+        public void OnNext()
+        {
+            _switcher.NextObject();
+            UpdateDisplay(_switcher.Index);
+        }
+
+        public void OnPrevious()
+        {
+            _switcher.PreviousObject();
+            UpdateDisplay(_switcher.Index);
+        }
     }
 }

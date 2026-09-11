@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Projects/Samples/33_FadeScreen/FadeScreen.unity
     guid: bcec782cd74e4cd28cabdec90d81a060
+  - enabled: 1
+    path: "Assets/Projects/Samples/44_BGM\u5207\u308A\u66FF\u3048/BGM\u5207\u308A\u66FF\u3048Demo.unity"
+    guid: d1f58f8c5e02459f95f565a22143f605
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 4730e9b3974bbf64d8a2ba08543994af, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: de728af38da6e784a88849ed095b9b53, type: 3}

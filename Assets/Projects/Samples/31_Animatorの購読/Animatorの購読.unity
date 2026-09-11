@@ -432,7 +432,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 956923341}
-          m_TargetAssemblyTypeName: MyUtils.AnimatorBinder, Assembly-CSharp
+          m_TargetAssemblyTypeName: MyUtils.AnimatorUtils.AnimatorBinder, MyUtils.Runtime
           m_MethodName: SetFloatParameter
           m_Mode: 4
           m_Arguments:
@@ -448,7 +448,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 956923341}
-          m_TargetAssemblyTypeName: MyUtils.AnimatorBinder, Assembly-CSharp
+          m_TargetAssemblyTypeName: MyUtils.AnimatorUtils.AnimatorBinder, MyUtils.Runtime
           m_MethodName: SetFloatParameter
           m_Mode: 4
           m_Arguments:
@@ -867,7 +867,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 978097587}
-          m_TargetAssemblyTypeName: MyUtils.AnimatorBinder, Assembly-CSharp
+          m_TargetAssemblyTypeName: MyUtils.AnimatorUtils.AnimatorBinder, MyUtils.Runtime
           m_MethodName: SetBoolParameter
           m_Mode: 6
           m_Arguments:
@@ -883,7 +883,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 978097587}
-          m_TargetAssemblyTypeName: MyUtils.AnimatorBinder, Assembly-CSharp
+          m_TargetAssemblyTypeName: MyUtils.AnimatorUtils.AnimatorBinder, MyUtils.Runtime
           m_MethodName: SetBoolParameter
           m_Mode: 6
           m_Arguments:
@@ -1249,7 +1249,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1645362741}
-          m_TargetAssemblyTypeName: MyUtils.AnimatorBinder, Assembly-CSharp
+          m_TargetAssemblyTypeName: MyUtils.AnimatorUtils.AnimatorBinder, MyUtils.Runtime
           m_MethodName: SetBoolParameter
           m_Mode: 6
           m_Arguments:
@@ -1265,7 +1265,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1645362741}
-          m_TargetAssemblyTypeName: MyUtils.AnimatorBinder, Assembly-CSharp
+          m_TargetAssemblyTypeName: MyUtils.AnimatorUtils.AnimatorBinder, MyUtils.Runtime
           m_MethodName: SetBoolParameter
           m_Mode: 6
           m_Arguments:

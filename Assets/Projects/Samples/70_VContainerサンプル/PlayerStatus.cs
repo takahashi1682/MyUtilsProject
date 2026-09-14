@@ -6,9 +6,11 @@ using VContainer.Unity;
 
 namespace Projects._70_VContainerサンプル
 {
-    public class PlayerStatus : MonoBehaviour, IPlayerScopeInitializable
+    public class PlayerStatus : MonoBehaviour, IPlayerScopeInitializable, IScopeRegisterable, IScopeLaunchable
     {
         public DemoSaveData Status;
+
+        [Inject] private DemoSaveDataStore _demoDataStore;
 
         public void OnRegister(IContainerBuilder builder)
         {
@@ -16,11 +18,10 @@ namespace Projects._70_VContainerサンプル
             builder.RegisterComponent(this);
         }
 
-        public void OnResolve(IObjectResolver resolver)
+        public void OnLaunch()
         {
-            // RootLifetimeScope に登録した DemoSaveDataStore を取得する
-            var demoDataStore = resolver.Resolve<DemoSaveDataStore>();
-            Status = demoDataStore.CurrentValue;
+            // RootLifetimeScope に登録した DemoSaveDataStore を[Inject]で受け取る
+            Status = _demoDataStore.CurrentValue;
         }
     }
 }

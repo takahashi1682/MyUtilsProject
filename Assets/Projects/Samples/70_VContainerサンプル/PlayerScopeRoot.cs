@@ -4,14 +4,14 @@ using VContainer.Unity;
 
 namespace Projects._70_VContainerサンプル
 {
-    public interface IPlayerScopeInitializable : IScopeInitializable
+    public interface IPlayerScopeInitializable : IScopeMember
     {
     }
 
     /// <summary>
     /// PlayerオブジェクトのScopeRoot
     /// </summary>
-    public class PlayerScopeRoot : AbstractScopeRoot<IPlayerScopeInitializable>, IGameManagerScopeInitializable
+    public class PlayerScopeRoot : AbstractScopeRoot<IPlayerScopeInitializable>, IGameManagerScopeInitializable, IScopeLaunchable
     {
         public override void OnRegister(IContainerBuilder builder)
         {
@@ -19,7 +19,7 @@ namespace Projects._70_VContainerサンプル
             builder.RegisterComponent(this);
         }
 
-        public override void OnResolve(IObjectResolver resolver)
+        public void OnLaunch()
         {
         }
     }

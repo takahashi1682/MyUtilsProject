@@ -27,7 +27,7 @@
         "net.tnrd.serializableinterface": "2.2.1",
         "jp.hadashikick.vcontainer": "1.18.0"
       },
-      "hash": "86577a88a5adcafa871b8d0c072b327832cfcb8d"
+      "hash": "f1f968fa63f9b33d6fd19a7fd69b90f0085b42a2"
     },
     "com.unity.2d.animation": {
       "version": "16.0.0",
@@ -151,7 +151,7 @@
       "dependencies": {}
     },
     "com.unity.collab-proxy": {
-      "version": "2.12.4",
+      "version": "2.13.6",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
@@ -215,7 +215,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.inputsystem": {
-      "version": "1.19.0",
+      "version": "1.20.0",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -252,7 +252,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.recorder": {
-      "version": "5.1.6",
+      "version": "5.1.7",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -351,12 +351,42 @@
       }
     },
     "com.unity.visualscripting": {
-      "version": "1.9.11",
+      "version": "1.9.12",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.ugui": "1.0.0",
+        "com.unity.ugui": "2.0.0",
         "com.unity.modules.jsonserialize": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.xr.core-utils": {
+      "version": "2.6.0",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.xr": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.xr.legacyinputhelpers": {
+      "version": "3.0.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.xr": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
+    "com.unity.xr.management": {
+      "version": "4.7.0",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.modules.xr": "1.0.0",
+        "com.unity.xr.core-utils": "2.2.1",
+        "com.unity.modules.subsystems": "1.0.0",
+        "com.unity.xr.legacyinputhelpers": "2.1.11"
       },
       "url": "https://packages.unity.com"
     },
@@ -606,6 +636,12 @@
         "com.unity.modules.physics": "1.0.0",
         "com.unity.modules.terrain": "1.0.0"
       }
+    },
+    "com.unity.modules.tetgen": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
     },
     "com.unity.modules.tilemap": {
       "version": "1.0.0",

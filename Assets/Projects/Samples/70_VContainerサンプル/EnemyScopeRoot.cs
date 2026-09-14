@@ -4,14 +4,14 @@ using VContainer.Unity;
 
 namespace Projects._70_VContainerサンプル
 {
-    public interface IEnemyScopeInitializable : IScopeInitializable
+    public interface IEnemyScopeInitializable : IScopeMember
     {
     }
 
     /// <summary>
     /// EnemyオブジェクトのScopeRoot
     /// </summary>
-    public class EnemyScopeRoot : AbstractScopeRoot<IEnemyScopeInitializable>, IGameManagerScopeInitializable
+    public class EnemyScopeRoot : AbstractScopeRoot<IEnemyScopeInitializable>, IGameManagerScopeInitializable, IScopeLaunchable
     {
         public override void OnRegister(IContainerBuilder builder)
         {
@@ -19,7 +19,7 @@ namespace Projects._70_VContainerサンプル
             builder.RegisterComponent(this);
         }
 
-        public override void OnResolve(IObjectResolver resolver)
+        public void OnLaunch()
         {
         }
     }

@@ -1,18 +1,15 @@
-using MyUtils.VContainerExtensions;
 using UnityEngine;
 using VContainer;
 
 namespace Projects._70_VContainerサンプル
 {
-    public class EnemyAI : MonoBehaviour, IEnemyScopeInitializable, IScopeLaunchable
+    public class EnemyAI : MonoBehaviour
     {
-        // EnemyAIは登録しない（他のコンポーネントから呼ばれない）ためIScopeRegisterableは実装しない
-
+        // ScopeRootの配下にあるので、インターフェースなしでも[Inject]で注入される
         [Inject] private PlayerScopeRoot _playerScope;
 
-        public void OnLaunch()
+        private void Start()
         {
-            // PlayerScopeRoot に登録された PlayerStatus を取得する
             var playerStatus = _playerScope.Container.Resolve<PlayerStatus>();
             Debug.Log(playerStatus.Status.PlayerName);
         }

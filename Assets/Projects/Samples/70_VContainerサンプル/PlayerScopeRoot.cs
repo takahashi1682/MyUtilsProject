@@ -4,23 +4,12 @@ using VContainer.Unity;
 
 namespace Projects._70_VContainerサンプル
 {
-    public interface IPlayerScopeInitializable : IScopeMember
-    {
-    }
-
-    /// <summary>
-    /// PlayerオブジェクトのScopeRoot
-    /// </summary>
-    public class PlayerScopeRoot : AbstractScopeRoot<IPlayerScopeInitializable>, IGameManagerScopeInitializable, IScopeLaunchable
+    // PlayerのScopeRoot(自身を親のスコープに登録する)
+    public class PlayerScopeRoot : AbstractScopeRoot
     {
         public override void OnRegister(IContainerBuilder builder)
         {
-            // SceneLifetimeScope に自身を登録する
             builder.RegisterComponent(this);
-        }
-
-        public void OnLaunch()
-        {
         }
     }
 }

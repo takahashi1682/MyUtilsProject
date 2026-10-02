@@ -14,43 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MyUtils.BGMControllerSetting
   SceneEnterAudioSettings:
   - SceneName:
-      SceneAsset: {fileID: 0}
-      _sceneName: 
+      SceneAsset: {fileID: 102900000, guid: d1f58f8c5e02459f95f565a22143f605, type: 3}
+      _sceneName: "BGM\u5207\u308A\u66FF\u3048Demo"
     AudioPlayMode: 0
     Resource: {fileID: 11400000, guid: 3fd07660bf91b4b4caa361905fa04d3e, type: 2}
-  - SceneName:
-      SceneAsset: {fileID: 0}
-      _sceneName: 
-    AudioPlayMode: 1
-    Resource: {fileID: 11400000, guid: 3fd07660bf91b4b4caa361905fa04d3e, type: 2}
-  - SceneName:
-      SceneAsset: {fileID: 0}
-      _sceneName: 
-    AudioPlayMode: 2
-    Resource: {fileID: 11400000, guid: 3fd07660bf91b4b4caa361905fa04d3e, type: 2}
-  - SceneName:
-      SceneAsset: {fileID: 0}
-      _sceneName: 
-    AudioPlayMode: 3
-    Resource: {fileID: 11400000, guid: 3664d38081679564e930c15bb6e2dd8e, type: 2}
-  - SceneName:
-      SceneAsset: {fileID: 0}
-      _sceneName: 
-    AudioPlayMode: 4
-    Resource: {fileID: 11400000, guid: 3fd07660bf91b4b4caa361905fa04d3e, type: 2}
-  - SceneName:
-      SceneAsset: {fileID: 0}
-      _sceneName: 
-    AudioPlayMode: 5
-    Resource: {fileID: 11400000, guid: 3fd07660bf91b4b4caa361905fa04d3e, type: 2}
-  - SceneName:
-      SceneAsset: {fileID: 0}
-      _sceneName: 
-    AudioPlayMode: 6
-    Resource: {fileID: 0}
-  - SceneName:
-      SceneAsset: {fileID: 0}
-      _sceneName: 
-    AudioPlayMode: 7
-    Resource: {fileID: 0}
   SceneExitAudioSettings: []

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6100825394391632202}
   - component: {fileID: 5766359088720491689}
   - component: {fileID: -7170928665162347054}
+  - component: {fileID: 6026847049870638395}
   m_Layer: 0
   m_Name: RootLifetimeScope
   m_TagString: Untagged
@@ -67,13 +68,26 @@ MonoBehaviour:
   <Override>k__BackingField: {fileID: 0}
   <Current>k__BackingField:
     value:
-      PlayerName: 
-      Score: 0
+      PlayerName: "\u306D\u3053"
+      Score: 99
   LoadOnAwake: 1
-  AutoSaveOnChange: 0
+  AutoSaveOnChange: 1
   ShowDebugInfo: 1
   _isEncrypt: 1
   _aesKey: e5Cp29Pda8n5Qv13
+--- !u!114 &6026847049870638395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226274624910234703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16d4703881c9459f9bacb85bc6f259d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MyUtils.Runtime::MyUtils.BGMController
+  Setting: {fileID: 11400000, guid: 42971776382640cf8559cf03462d1a67, type: 2}
 --- !u!1001 &3262995518806580952
 PrefabInstance:
   m_ObjectHideFlags: 0

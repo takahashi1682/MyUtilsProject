@@ -148,6 +148,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf37b927885aa9f4ca5dee8c36e8fbf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::Projects._70_VContainer\u30B5\u30F3\u30D7\u30EB.GameManager"
+  _isBuilt: 0
+  _includeInactive: 0
+  _includeDisableComponent: 0
   _additionalScanRoots:
   - {fileID: 1875698864}
   - {fileID: 1789607442}
@@ -351,7 +354,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
+  m_ActiveFontFeatures: 6e72656bu
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -537,7 +540,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
+  m_ActiveFontFeatures: 6e72656bu
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -624,8 +627,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "VContainerExtensions\uFF08AbstractScopeRoot\uFF09\u3092\u4F7F\u3063\u305FDI\u30B3\u30F3\u30C6\u30CA\u69CB\u6210\u306E\u30C7\u30E2\u3067\u3059\u3002EnemyScopeRoot
-    / PlayerScopeRoot\u304C\u305D\u308C\u305E\u308C\u306E\u30B9\u30B3\u30FC\u30D7\u3092\u69CB\u7BC9\u3057\u307E\u3059\u3002"
+  m_text: "VContainerExtensions\uFF08AbstractScopeRoot\uFF09\u3092\u4F7F\u3063\u305FDI\u30B3\u30F3\u30C6\u30CA\u69CB\u6210\u306E\u30C7\u30E2\u3067\u3059\u3002EnemyScopeRoot / PlayerScopeRoot\u304C\u305D\u308C\u305E\u308C\u306E\u30B9\u30B3\u30FC\u30D7\u3092\u69CB\u7BC9\u3057\u307E\u3059\u3002"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -675,7 +677,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
+  m_ActiveFontFeatures: 6e72656bu
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -933,6 +935,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55be160da7b9437597f75a4a171b470d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::Projects._10_VContainer\u30B5\u30F3\u30D7\u30EB.EnemyContainerRoot"
+  _isBuilt: 0
+  _includeInactive: 0
+  _includeDisableComponent: 0
   _additionalScanRoots: []
 --- !u!1 &1817104280
 GameObject:
@@ -1010,6 +1015,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e481d6b8438f8b5468fba6ceb9532df2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: "Assembly-CSharp::Projects._70_VContainer\u30B5\u30F3\u30D7\u30EB.PlayerScopeRoot"
+  _isBuilt: 0
+  _includeInactive: 0
+  _includeDisableComponent: 0
   _additionalScanRoots: []
 --- !u!1 &1970700642
 GameObject:

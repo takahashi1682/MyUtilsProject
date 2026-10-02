@@ -4,23 +4,12 @@ using VContainer.Unity;
 
 namespace Projects._70_VContainerサンプル
 {
-    public interface IEnemyScopeInitializable : IScopeMember
-    {
-    }
-
-    /// <summary>
-    /// EnemyオブジェクトのScopeRoot
-    /// </summary>
-    public class EnemyScopeRoot : AbstractScopeRoot<IEnemyScopeInitializable>, IGameManagerScopeInitializable, IScopeLaunchable
+    // EnemyのScopeRoot(自身を親のスコープに登録する)
+    public class EnemyScopeRoot : AbstractScopeRoot
     {
         public override void OnRegister(IContainerBuilder builder)
         {
-            // SceneLifetimeScope に自身を登録する
             builder.RegisterComponent(this);
-        }
-
-        public void OnLaunch()
-        {
         }
     }
 }

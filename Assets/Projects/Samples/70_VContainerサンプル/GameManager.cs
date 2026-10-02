@@ -4,15 +4,11 @@ using VContainer.Unity;
 
 namespace Projects._70_VContainerサンプル
 {
-    public interface IGameManagerScopeInitializable : IScopeMember
-    {
-    }
-
-    public class GameManager : AbstractScopeRoot<IGameManagerScopeInitializable>
+    // シーン全体のScopeRoot(自身をSceneLifetimeScopeに登録する)
+    public class GameManager : AbstractScopeRoot
     {
         public override void OnRegister(IContainerBuilder builder)
         {
-            // SceneLifetimeScope に自身を登録する
             builder.RegisterComponent(this);
         }
     }

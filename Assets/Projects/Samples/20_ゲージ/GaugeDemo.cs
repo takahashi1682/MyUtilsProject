@@ -5,11 +5,11 @@ using UnityEngine;
 namespace Projects._20_ゲージ
 {
     /// <summary>
-    /// Gauge系（MemoryGauge / FillSegmentGauge / UI.Gauge）のデモ用スクリプト
+    /// Gauge系（MemoryGauge / FillSegmentGauge / CustomGauge + TrailingSubGauge）のデモ用スクリプト
     /// MemoryGaugeはMemoryGaugeBinder経由でHealthと連動して自動更新されるため、
     /// ここではライフ（Health）の増減ボタンと、FillSegmentGaugeをスライダーで直接操作する処理のみを行う。
-    /// UI.Gauge（HPバー）はValue(0〜1)をボタンから直接増減し、サブゲージ（ダメージ表示）が
-    /// ゆっくり追従する様子を確認できる。
+    /// CustomGauge（HPバー）はValue(0〜1)をボタンから直接増減し、TrailingSubGaugeによる
+    /// サブゲージ（ダメージ表示）がゆっくり追従する様子を確認できる。
     /// </summary>
     public class GaugeDemo : MonoBehaviour
     {
@@ -18,7 +18,7 @@ namespace Projects._20_ゲージ
         [SerializeField] private FillSegmentGauge _mpGauge;
         [SerializeField] private int _maxMp = 3000;
 
-        [SerializeField] private MyUtils.UI.Gauge _hpBarGauge;
+        [SerializeField] private MyUtils.UI.CustomGauge _hpBarGauge;
 
         public void OnLoseLife() => _health.Sub(1);
 

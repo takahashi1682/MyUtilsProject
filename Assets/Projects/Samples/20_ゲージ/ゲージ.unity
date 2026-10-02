@@ -3383,6 +3383,7 @@ GameObject:
   - component: {fileID: 2000000121}
   - component: {fileID: 2000000122}
   - component: {fileID: 2000000123}
+  - component: {fileID: 2000000124}
   m_Layer: 5
   m_Name: BarGaugeSub
   m_TagString: Untagged
@@ -3526,13 +3527,26 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 46d5af6fbe13481e930d4d9292031a73, type: 3}
   m_Name:
-  m_EditorClassIdentifier: MyUtils.Runtime::MyUtils.UI.Gauge
+  m_EditorClassIdentifier: MyUtils.Runtime::MyUtils.UI.CustomGauge
   Target: {fileID: 0}
-  _subTarget: {fileID: 2000000121}
-  _subTargetSpeed: 100
   _direction: 0
   _offset: 0
   _value: 1
+--- !u!114 &2000000124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000000120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77fa78903eee6ec49a745f990a865df4, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: MyUtils.Runtime::MyUtils.UI.TrailingSubGauge
+  Target: {fileID: 0}
+  _source: {fileID: 2000000133}
+  _speed: 100
 --- !u!222 &2000000134
 CanvasRenderer:
   m_ObjectHideFlags: 0

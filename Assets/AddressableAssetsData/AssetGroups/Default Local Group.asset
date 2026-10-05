@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+  m_GroupName: Default Local Group
+  m_GUID: 238315278dca0054cb58f9cdc95a22ce
+  m_SerializeEntries:
+  - m_GUID: 0753d78b052e0004b8e60011e72071f1
+    m_Address: "Assets/Projects/Samples/42_\u4F1A\u8A71\u30B7\u30B9\u30C6\u30E0/001_\u305A\u3093\u3060\u3082\u3093\uFF08\u30CE\u30FC\u30DE\u30EB\uFF09_\u3053\u3093\u306B\u3061\u306F\uFF01\u3053\u308C\u306F\u2026.wav"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 129328a08ec597d42a7cb8274b7672bc
+    m_Address: "Assets/Projects/Samples/42_\u4F1A\u8A71\u30B7\u30B9\u30C6\u30E0/003_\u305A\u3093\u3060\u3082\u3093\uFF08\u30CE\u30FC\u30DE\u30EB\uFF09_\u30AF\u30EA\u30C3\u30AF\u3059\u308B\u3068\u6B21\u306E\u2026.wav"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2ec32db6bd810c04e935369fcaf68118
+    m_Address: "Assets/Projects/Samples/42_\u4F1A\u8A71\u30B7\u30B9\u30C6\u30E0/007_\u6625\u65E5\u90E8\u3064\u3080\u304E\uFF08\u30CE\u30FC\u30DE\u30EB\uFF09_\u4F1A\u8A71\u304C\u7D42\u308F\u308B\u3068\u30A6\u30A3\u2026.wav"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 42969b931bc411e4b9e25f8177863724
+    m_Address: "Assets/Projects/Samples/42_\u4F1A\u8A71\u30B7\u30B9\u30C6\u30E0/005_\u6625\u65E5\u90E8\u3064\u3080\u304E\uFF08\u30CE\u30FC\u30DE\u30EB\uFF09_\u305D\u3046\u3060\u306D\u3001\u305A\u3093\u3060\u3082\u2026.wav"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4d3b0018f1f880344ae8ed348fcdda89
+    m_Address: "Assets/Projects/Samples/42_\u4F1A\u8A71\u30B7\u30B9\u30C6\u30E0/006_\u305A\u3093\u3060\u3082\u3093\uFF08\u30CE\u30FC\u30DE\u30EB\uFF09_CSV\u304B\u3089\u30BB\u30EA\u30D5\u3092\u2026.wav"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e7bca4188860a7c4e97cd86c5edd14d4
+    m_Address: "Assets/Projects/Samples/42_\u4F1A\u8A71\u30B7\u30B9\u30C6\u30E0/002_\u305A\u3093\u3060\u3082\u3093\uFF08\u30CE\u30FC\u30DE\u30EB\uFF09_TalkManag\u2026.wav"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f80abf087f187dc44b95543646bde441
+    m_Address: "Assets/Projects/Samples/42_\u4F1A\u8A71\u30B7\u30B9\u30C6\u30E0/004_\u305A\u3093\u3060\u3082\u3093\uFF08\u30CE\u30FC\u30DE\u30EB\uFF09_\u304A\u306F\u3088\u3046\u3064\u3080\u304E\u3002\u4ECA\u2026.wav"
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: df6c4d3a2d066ee4a945b6479f88b318, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: a32679f9096a4214d876e995bed1bd01, type: 2}
+    - {fileID: 11400000, guid: 7a80d0fc7c2bf9f4bb1af433c5d3eab8, type: 2}

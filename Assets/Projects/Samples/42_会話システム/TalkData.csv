@@ -1,8 +1,9 @@
 key,name,lines
-greeting,ねこ,こんにちは！これは TalkUtils の会話システムのサンプルです。
-greeting,ねこ,TalkManager がセリフの進行を管理し\nTalkLineViewer が画面に表示しています。
-greeting,ねこ,クリックすると次のセリフに進めます。
-dialogue,ねこ,今日はいい天気だね。
-dialogue,いぬ,そうだね！散歩日和だ。
-dialogue,ねこ,CSVからセリフを読み込んでいるから\n内容を増やすのも簡単だよ。
-dialogue,いぬ,会話が終わるとウィンドウも自動で閉じるんだ。
+greeting,ずんだもん,こんにちは！これは TalkUtils の会話システムのサンプルなのだ。,0,Assets/Projects/Samples/42_会話システム/001_ずんだもん（ノーマル）_こんにちは！これは….wav
+greeting,ずんだもん,TalkManager がセリフの進行を管理し\nTalkLineViewer が画面に表示するのだ。,0,Assets/Projects/Samples/42_会話システム/002_ずんだもん（ノーマル）_TalkManag….wav
+greeting,ずんだもん,クリックすると次のセリフに進めるのだ。,0,Assets/Projects/Samples/42_会話システム/003_ずんだもん（ノーマル）_クリックすると次の….wav
+
+dialogue,ずんだもん,おはよう、つむぎ。\n今日もいい天気なのだ。,0,Assets/Projects/Samples/42_会話システム/004_ずんだもん（ノーマル）_おはようつむぎ。今….wav
+dialogue,つむぎ,そうだね、ずんだもん！散歩日和だね。,0,Assets/Projects/Samples/42_会話システム/005_春日部つむぎ（ノーマル）_そうだね、ずんだも….wav
+dialogue,ずんだもん,CSVからセリフを読み込んでいるから、内容を増やすのも簡単なのだ。,0,Assets/Projects/Samples/42_会話システム/006_ずんだもん（ノーマル）_CSVからセリフを….wav
+dialogue,つむぎ,会話が終わるとウィンドウも自動で閉じるんだね。,0,Assets/Projects/Samples/42_会話システム/007_春日部つむぎ（ノーマル）_会話が終わるとウィ….wav

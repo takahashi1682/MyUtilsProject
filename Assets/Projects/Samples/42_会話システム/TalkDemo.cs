@@ -1,5 +1,5 @@
-using Cysharp.Threading.Tasks;
 using MyUtils.TalkUtils;
+using R3;
 using UnityEngine;
 
 namespace Projects._42_会話システム
@@ -10,19 +10,21 @@ namespace Projects._42_会話システム
     /// </summary>
     public class TalkDemo : MonoBehaviour
     {
-        [SerializeField] private TextAsset _csvFile;
         [SerializeField] private TalkManager _talkManager;
 
-        private void Awake()
+        private void Start()
         {
-            // CSVファイルからセリフデータを読み込む
-            _talkManager.LoadCsv(_csvFile);
+            // 会話の終了はイベントで受け取る
+            _talkManager.OnTalkEnd.Subscribe(_ => Debug.Log("終了")).AddTo(this);
         }
 
         /// <summary>
-        /// 会話を開始する
+        /// 会話を開始する。会話中に押された場合の動作は TalkManager の Overlap Mode で決まる
         /// </summary>
         /// <param name="key">会話のキー</param>
-        public void OnStartTalk(string key) => _talkManager.TalkAsync(key).Forget();
+        public void OnStartTalk(string key)
+        {
+            _talkManager.Talk(key);
+        }
     }
 }

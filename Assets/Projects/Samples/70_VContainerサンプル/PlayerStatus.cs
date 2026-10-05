@@ -6,7 +6,7 @@ using VContainer.Unity;
 
 namespace Projects._70_VContainerサンプル
 {
-    public class PlayerStatus : MonoBehaviour, IScopeRegisterable, IScopeLaunchable
+    public class PlayerStatus : MonoBehaviour, IScopeRegisterable
     {
         public DemoSaveData Status;
 
@@ -18,8 +18,8 @@ namespace Projects._70_VContainerサンプル
             builder.RegisterComponent(this);
         }
 
-        // 注入が済んだ後に呼ばれるので、受け取ったデータを使える
-        public void OnLaunch()
+        // スコープの構築はAwakeより先に終わるので、注入されたデータを使える
+        private void Awake()
         {
             Status = _demoDataStore.CurrentValue;
         }

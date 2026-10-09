@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-using System.Linq;
 using MyUtils;
 using MyUtils.Misc;
 using MyUtils.Movement;
@@ -11,7 +9,7 @@ namespace Projects._90_小物ユーティリティ集
     /// <summary>
     /// MyUtilsの小物ユーティリティ群（DelayDestroy / TimeScaler / OnBecameInvisibleDestroy /
     /// GradientImage / MaterialOffsetMover / SpriteScroller / PlaySEOnSliderChanged /
-    /// ProjectVersionViewer / SerializableKeyPair / CustomBounds / ParticleSystemSimulator /
+    /// ProjectVersionViewer / CustomBounds / ParticleSystemSimulator /
     /// DelayTrack / MonoBehaviourLifecycleEvents）のまとめデモ用スクリプト。
     /// ObjectMover / ObjectRotator も補助的に使用しています。
     /// </summary>
@@ -31,10 +29,6 @@ namespace Projects._90_小物ユーティリティ集
 
         [Header("④ GradientImage")]
         [SerializeField] private GradientImage _gradientImage;
-
-        [Header("⑨ SerializableKeyPair")]
-        [SerializeField] private List<SerializableKeyPair<string, int>> _items;
-        [SerializeField] private TextMeshProUGUI _itemsText;
 
         [Header("⑪ ParticleSystemSimulator")]
         [SerializeField] private GameObject _particleTarget;
@@ -65,8 +59,6 @@ namespace Projects._90_小物ユーティリティ集
         private void Start()
         {
             _gradientImage.SetGradient(WarmGradient);
-
-            _itemsText.text = string.Join("\n", _items.Select(pair => $"{pair.Key}: {pair.Value}"));
 
             _delayTrackTargetOrigin = _delayTrackTarget.anchoredPosition;
         }

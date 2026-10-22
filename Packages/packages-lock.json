@@ -17,9 +17,9 @@
       "url": "https://package.openupm.com"
     },
     "com.takahashi.myutils": {
-      "version": "https://github.com/takahashi1682/MyUtils.git",
+      "version": "file:C:/Users/h.takahashi/Documents/GitHub/MyUtils",
       "depth": 0,
-      "source": "git",
+      "source": "local",
       "dependencies": {
         "com.unity.addressables": "2.11.2",
         "com.cysharp.unitask": "2.5.11",
@@ -27,8 +27,7 @@
         "com.cysharp.r3": "1.3.1",
         "net.tnrd.serializableinterface": "2.2.1",
         "jp.hadashikick.vcontainer": "1.18.0"
-      },
-      "hash": "dd2d2caa7d9314baa8a6ed09501c5cc7a7560283"
+      }
     },
     "com.unity.2d.animation": {
       "version": "16.0.0",

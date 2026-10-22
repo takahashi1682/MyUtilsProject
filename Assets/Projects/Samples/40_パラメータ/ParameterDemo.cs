@@ -18,6 +18,18 @@ namespace Projects._40_パラメータ
         [SerializeField] private int _healAmount = 20;
         [SerializeField] private int _expAmount = 30;
 
+        // 起動時の値(リセット用)
+        private (int Min, int Max, int Current) _healthDefault;
+        private (int Min, int Max, int Current) _levelDefault;
+        private (int Min, int Max, int Current) _expDefault;
+
+        private void Start()
+        {
+            _healthDefault = (_health.MinValue, _health.MaxValue, _health.CurrentValue);
+            _levelDefault = (_level.MinValue, _level.MaxValue, _level.CurrentValue);
+            _expDefault = (_exp.MinValue, _exp.MaxValue, _exp.CurrentValue);
+        }
+
         public void OnDamage() => _health.Sub(_damageAmount);
 
         public void OnHeal() => _health.Add(_healAmount);
@@ -37,6 +49,16 @@ namespace Projects._40_パラメータ
             }
 
             _exp.SetClampValue(total);
+        }
+
+        /// <summary>
+        /// 「リセット」ボタン:Initialize(min, max, current) で、最小値・最大値・現在値をまとめて起動時の値に戻す
+        /// </summary>
+        public void OnReset()
+        {
+            _health.Initialize(_healthDefault.Min, _healthDefault.Max, _healthDefault.Current);
+            _level.Initialize(_levelDefault.Min, _levelDefault.Max, _levelDefault.Current);
+            _exp.Initialize(_expDefault.Min, _expDefault.Max, _expDefault.Current);
         }
     }
 }
